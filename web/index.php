@@ -115,6 +115,7 @@
 </html>
 <?php
 
+<?php
+  echo "The time is " . date("h:i:sa");
   echo $_SERVER['HTTP_USER_AGENT'];
-
 ?>
