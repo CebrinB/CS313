@@ -19,7 +19,7 @@ footer {
 }
 
 .carousel-inner img {
-  width: 80%; /* Set width to 100% */
+  width: 60%; /* Set width to 100% */
   margin: auto;
   min-height:200px;
 }

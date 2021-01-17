@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b631726285.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="floral-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href="copy from Google Fonts" rel="stylesheet">
@@ -94,10 +95,10 @@
     </div>
     <div class="col-sm-4">
       <div class="well">
-       <p>See previous assignments at my <a href="https://cebrinb.github.io/">GitHub</a></p>
+       <p>See previous assignments at my <a href="https://cebrinb.github.io/"><i class="fab fa-github-square"></i>GitHub</a></p>
       </div>
       <div class="well">
-       <p>Check me out on <a href="https://www.linkedin.com/in/cebrinbillings/">LinkedIn</a></p>
+       <p>Check me out on <a href="https://www.linkedin.com/in/cebrinbillings/"><i class="fab fa-linkedin"></i>LinkedIn</a></p>
       </div>
     </div>
   </div>
