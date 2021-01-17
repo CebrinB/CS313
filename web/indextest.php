@@ -115,7 +115,9 @@
 </html>
 <?php
 
-  echo date("D M d, Y G:i a");
+<?php
+  
+  
   echo $_SERVER['HTTP_USER_AGENT'];
 
 ?>
