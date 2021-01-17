@@ -1,13 +1,15 @@
-/*bootstrap template sourced from W3Schools 
+/*bootstrap template sourced from W3Schools https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_marketing&stacked=h */
+
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  background-color: #86bd3b;
 }
 
 /* Add a gray background color and some padding to the footer */
 footer {
-  background-color: #f2f2f2;
+  background-color: #86bd3b;
   padding: 25px;
 }
 
