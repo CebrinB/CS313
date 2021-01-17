@@ -10,13 +10,13 @@
     <script src="https://kit.fontawesome.com/b631726285.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="floral-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link href="copy from Google Fonts" rel="stylesheet">
   </head>
   <body>
   <nav class="navbar navbar-dark">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fas fa-chevron-circle-down"></i>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -95,10 +95,10 @@
     </div>
     <div class="col-sm-4">
       <div class="well">
-       <p>See previous assignments at my <a href="https://cebrinb.github.io/"><i class="fab fa-github-square"></i>GitHub</a></p>
+       <p>See previous assignments at my <a href="https://cebrinb.github.io/"><i class="fab fa-github-square"></i> GitHub</a></p>
       </div>
       <div class="well">
-       <p>Check me out on <a href="https://www.linkedin.com/in/cebrinbillings/"><i class="fab fa-linkedin"></i>LinkedIn</a></p>
+       <p>Check me out on <a href="https://www.linkedin.com/in/cebrinbillings/"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
       </div>
     </div>
   </div>
