@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="floral-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href="copy from Google Fonts" rel="stylesheet">
   </head>
@@ -55,16 +56,16 @@
       <div class="item active">
         <img src="summer-783347_1920.jpg" alt="Summer garden with flowers">
         <div class="carousel-caption">
-          <h3>I love to</h3>
-          <p>garden</p>
+          <h2>I love to</h2>
+          <h1>garden</h1>
         </div>      
       </div>
 
       <div class="item">
         <img src="cookies-1835414_1920.jpg" alt="Blueberry cookies with flowers on the side">
         <div class="carousel-caption">
-          <h3>I love to </h3>
-          <p>bake treats</p>
+          <h2>I love to </h2>
+          <h1>bake treats</h1>
         </div>      
       </div>
     </div>
