@@ -1,8 +1,3 @@
-<?php
-
-  echo $_SERVER['HTTP_USER_AGENT'];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +25,15 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -105,3 +108,8 @@
     <script src="main.js" type="module"></script>
   </body>
 </html>
+<?php
+
+  echo $_SERVER['HTTP_USER_AGENT'];
+
+?>
