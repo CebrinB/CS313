@@ -11,7 +11,7 @@
     <link href="copy from Google Fonts" rel="stylesheet">
   </head>
   <body>
-  <nav class="navbar navbar-light">
+  <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
