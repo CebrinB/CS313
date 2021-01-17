@@ -11,6 +11,10 @@
   color:white;
 }
 
+button {
+  padding: 0;
+}
+
 /* Add a gray background color and some padding to the footer */
 footer {
   background-color: #86bd3b;
