@@ -31,7 +31,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Coming Soon</a></li>
+          <li><a href="assignments.php">click me</a></li>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
         </ul>
