@@ -22,25 +22,19 @@
       <li>
         <h5>Saddle</h5></br>
         <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
-        <div class="input-group">
-          <input id="color" type="text" class="form-control col-xs-2" placeholder="Quantity">
-          <div class="input-group-btn">
-            <input type="button" id="btn1" class="btn btn-info" value="Add to Cart">
-          </div>
-        </div>
+        <input type="text" id="addSaddle" placeholder="Quantity">
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
       </li>
       <li>
         <h5>Bridle</h5></br>
         <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
-        <label for="addBridle">Quantity</label>
-        <input type="text" id="addBridle">
+        <input type="text" id="addBridle" placeholder="Quantity">
         <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
       </li>
       <li>
         <h5>Blanket</h5></br>
       <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
-        <label for="addBlanket">Quantity</label>
-        <input type="text" id="addBlanket">
+        <input type="text" id="addBlanket" placeholder="Quantity">
         <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
       </li>
       
