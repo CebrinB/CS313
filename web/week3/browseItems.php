@@ -13,7 +13,11 @@
     ?>
     
     <link href="/week3/week3Styles.css">
+    
     <!-- Page Content -->
+    <button id="viewCart">View Cart</button>
+    <button id="checkout">Go to Checkout</button>
+
     <ul>
       <li>
         <h5>Saddle</h5></br>
@@ -41,7 +45,6 @@
       </li>
       
     </ul>
-    <button id="addToCart">Update Cart</button>
     <button id="viewCart">View Cart</button>
     <button id="checkout">Go to Checkout</button>
 
