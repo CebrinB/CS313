@@ -13,6 +13,7 @@
     ?>
 
     <!-- Content Dynamically Generated in main.js file -->
+    <h3>There are no items in your cart. Check out items for purchase at our <a href="/week3/browseItems.php">store page.</a></h3>
     
     <?php
 
