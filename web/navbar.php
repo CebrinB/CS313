@@ -11,14 +11,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="../index.php">Home</a></li>
+        <li class="active"><a href="/index.php">Home</a></li>
         <li><a href="#">About</a></li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="../assignments.php">Assignments</a></li>
-          <li><a href="../browseItems.php">week3</a></li>
+          <li><a href="/browseItems.php">week3 - Storefront</a></li>
           <li><a href="#"></a></li>
         </ul>
       </li>

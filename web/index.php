@@ -81,9 +81,3 @@
     <script src="main.js" type="module"></script>
   </body>
 </html>
-<?php
-
-  echo date("D M d, Y G:i a");
-  echo $_SERVER['HTTP_USER_AGENT'];
-
-?>

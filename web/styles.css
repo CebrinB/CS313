@@ -1,4 +1,13 @@
 /*bootstrap template sourced from W3Schools https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_marketing&stacked=h */
+/*!
+ * and from "Start Bootstrap" - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 56px;
+}
 
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
@@ -8,7 +17,7 @@
 }
 
 .navbar-brand ul li a {
-  color:white;
+  color:white !important;
 }
 
 button {
