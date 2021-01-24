@@ -15,19 +15,28 @@
     <!-- Page Content -->
     <ul>
       <li>
-      <a href="#"><img class="card-img-top" src="saddle.jfif" alt="Horse Saddle"></a>
-        <label for="addSaddle">Quantity</label>
-        <input type="text" id="addSaddle">
+        <h5>Saddle</h5></br>
+        <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
+        <div class="input-group">
+          <input id="color" type="text" class="form-control col-xs-2" placeholder="Quantity">
+          <div class="input-group-btn">
+            <input type="button" id="btn1" class="btn btn-info" value="Add to Cart">
+          </div>
+        </div>
       </li>
       <li>
-      <a href="#"><img class="card-img-top" src="bridle.jfif" alt="Horse Bridle"></a>
+        <h5>Bridle</h5></br>
+        <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
         <label for="addBridle">Quantity</label>
-        <input type="text" id="addBridle">Bridle
+        <input type="text" id="addBridle">
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
       </li>
       <li>
-      <a href="#"><img class="card-img-top" src="blanket.jfif" alt="Horse Blanket"></a>
+        <h5>Blanket</h5></br>
+      <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
         <label for="addBlanket">Quantity</label>
-        <input type="text" id="addBlanket">Blanket
+        <input type="text" id="addBlanket">
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
       </li>
       
     </ul>
