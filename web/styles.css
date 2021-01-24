@@ -1,13 +1,5 @@
 /*bootstrap template sourced from W3Schools https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_marketing&stacked=h */
-/*!
- * and from "Start Bootstrap" - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
- */
 
-body {
-  padding-top: 56px;
-}
 
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
@@ -16,19 +8,19 @@ body {
   background-color: #86bd3b;
 }
 
-.open li {
+.dropdown .open li {
   color:darkgreen !important;
 }
 
 a {
-  color:white !important;
+  color:white;
 }
 
 button {
   padding: 0px;
 }
 
-/* Add a gray background color and some padding to the footer */
+/* Add a green background color and some padding to the footer */
 footer {
   background-color: #86bd3b;
   color: white;
