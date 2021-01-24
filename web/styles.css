@@ -16,6 +16,10 @@ body {
   background-color: #86bd3b;
 }
 
+.open li {
+  color:darkgreen !important;
+}
+
 a {
   color:white !important;
 }

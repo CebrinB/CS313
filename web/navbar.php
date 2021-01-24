@@ -17,7 +17,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="/browseItems.php">week3 - Storefront</a></li>
+          <li><a href="/week3/browseItems.php">week3 - Storefront</a></li>
           <li><a href="#"></a></li>
         </ul>
       </li>
