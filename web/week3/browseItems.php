@@ -13,7 +13,7 @@
     ?>
     
     <link href="/week3/week3Styles.css">
-    
+
     <!-- Page Content -->
     <button id="viewCart">View Cart</button>
     <button id="checkout">Go to Checkout</button>
@@ -54,6 +54,6 @@
       include '../footer.php';
 
     ?>
-    <script src="/main.js" type="module"></script>
+    <script src="/week3/main.js" type="module"></script>
   </body>
 </html>

@@ -17,6 +17,6 @@
       include '/footer.php';
 
     ?>
-    <script src="/main.js" type="module"></script>
+    <script src="/week3/main.js" type="module"></script>
   </body>
 </html>
