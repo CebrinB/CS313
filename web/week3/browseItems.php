@@ -2,53 +2,43 @@
 <html lang="en">
   <?php
 
-  include '/head.php';
+  include '../head.php';
 
   ?>
   <body>
     <?php
 
-      include '/navbar.php';
+      include '../navbar.php';
 
     ?>
     
     <!-- Page Content -->
     <ul>
       <li>
-        <label for="addSaddle">Add to Cart</label>
-        <input type="checkbox" id="addSaddle">Saddle
+      <a href="#"><img class="card-img-top" src="saddle.jfif" alt="Horse Saddle"></a>
+        <label for="addSaddle">Quantity</label>
+        <input type="text" id="addSaddle">
       </li>
       <li>
-        <label for="addBridle">Add to Cart</label>
-        <input type="checkbox" id="addBridle">Bridle
+      <a href="#"><img class="card-img-top" src="bridle.jfif" alt="Horse Bridle"></a>
+        <label for="addBridle">Quantity</label>
+        <input type="text" id="addBridle">Bridle
       </li>
       <li>
-        <label for="addBlanket">Add to Cart</label>
-        <input type="checkbox" id="addBlanket">Blanket
+      <a href="#"><img class="card-img-top" src="blanket.jfif" alt="Horse Blanket"></a>
+        <label for="addBlanket">Quantity</label>
+        <input type="text" id="addBlanket">Blanket
       </li>
       
     </ul>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Saddle</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+    <button id="addToCart">Update Cart</button>
+    <button id="viewCart">View Cart</button>
+    <button id="checkout">Go to Checkout</button>
 
 
     <?php
 
-      include '/footer.php';
+      include '../footer.php';
 
     ?>
     <script src="/main.js" type="module"></script>

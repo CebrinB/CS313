@@ -8,6 +8,10 @@
   background-color: #86bd3b;
 }
 
+.navbar-toggle button {
+  color: white;
+}
+
 .dropdown .open li {
   color:darkgreen !important;
 }
