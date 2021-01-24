@@ -16,7 +16,7 @@ body {
   background-color: #86bd3b;
 }
 
-.navbar-brand ul li a {
+a {
   color:white !important;
 }
 
