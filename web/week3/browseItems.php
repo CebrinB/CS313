@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <?php
@@ -15,8 +19,10 @@
     <link href="/week3/week3Styles.css">
 
     <!-- Page Content -->
-    <input id="viewCart" type="submit" class="btn btn-primary btn-sm">View Cart</button>
+    <input id="viewCart" type="submit" value="View Cart" class="btn btn-primary btn-sm"></button>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
+    
+    <p>Items in Cart: <?php echo $_SESSION["items"] ?></p>
 
     <form action="viewCart.php" method="post">
       <ul>
@@ -42,7 +48,7 @@
       </ul>
     </form>
 
-    <input id="viewCart" type="submit" class="btn btn-primary btn-sm">View Cart</button>
+    <input id="viewCart" type="submit" class="btn btn-primary btn-sm" value="View Cart"></button>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
 
 
