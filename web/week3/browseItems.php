@@ -12,9 +12,10 @@
 
     ?>
     
+    <link href="/week3/week3Styles.css">
     <!-- Page Content -->
     <ul>
-      <li width="50px">
+      <li>
         <h5>Saddle</h5></br>
         <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
         <div class="input-group">
