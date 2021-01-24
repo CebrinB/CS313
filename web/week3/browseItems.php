@@ -18,7 +18,7 @@
         <h5>Saddle</h5></br>
         <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
         <div class="input-group">
-          <input id="color" type="text" class="form-control col-xs-2" placeholder="Quantity">
+          <input id="color" type="text" width="25" class="form-control col-xs-2" placeholder="Quantity">
           <div class="input-group-btn">
             <input type="button" id="btn1" class="btn btn-info" value="Add to Cart">
           </div>
