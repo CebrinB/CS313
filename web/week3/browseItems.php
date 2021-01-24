@@ -17,7 +17,7 @@ session_start();
 
     ?>
     
-    <link href="/week3/week3Styles.css">
+    <link rel="stylesheet" href="/week3/week3Styles.css">
 
     <!-- Page Content -->
     <a href="/week3/viewCart.php"><input id="viewCart" value="View Cart" class="btn btn-primary btn-sm"></button></a>

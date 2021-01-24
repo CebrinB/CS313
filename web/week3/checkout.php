@@ -6,19 +6,19 @@ session_start();
 <html lang="en">
   <?php
 
-  include '/head.php';
+  include '../head.php';
 
   ?>
   <body>
     <?php
 
-      include '/navbar.php';
+      include '../navbar.php';
 
     ?>
 
     <?php
 
-      include '/footer.php';
+      include '../footer.php';
 
     ?>
     <script src="/week3/main.js" type="module"></script>
