@@ -1,6 +1,9 @@
 <?php
 // Start the session
 session_start();
+
+$_SESSION["saddle"] = 
+$_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +17,10 @@ session_start();
     <?php
 
       include '../navbar.php';
+      $_SESSION["saddle"] = 0;
+      $_SESSION["bridle"] = 0;
+      $_SESSION["blanket"] = 0;
+      $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 
     ?>
     
@@ -30,19 +37,19 @@ session_start();
         <li>
           <h5>Saddle</h5></br>
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
-          <input type="text" id="addSaddle" placeholder="Quantity">
+          <input type="text" name="saddle" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
         </li>
         <li>
           <h5>Bridle</h5></br>
           <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
-          <input type="text" id="addBridle" placeholder="Quantity">
+          <input type="text" name="bridle" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
         </li>
         <li>
           <h5>Blanket</h5></br>
         <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
-          <input type="text" id="addBlanket" placeholder="Quantity">
+          <input type="text" name="blanket" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
         </li>
         
