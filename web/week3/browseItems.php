@@ -43,7 +43,7 @@ session_start();
 
     <!-- Page Content -->
     <a href="viewCart.php"><input value="View Cart" class="btn btn-primary btn-sm"></button></a>
-    <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
+    <button href="checkout.php" class="btn btn-primary btn-sm">Go to Checkout</button>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
     <form action="browseItems.php" method="POST">
