@@ -17,7 +17,9 @@ session_start();
 
     ?>
 
-    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
+    <link rel="stylesheet" href="week3Styles.css">
+
+    <a href="browseItems.php"><button class="btn btn-primary btn-sm">Continue Shopping</button></a>
     <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
