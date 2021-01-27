@@ -50,6 +50,7 @@ function renderShoppingCartItems(parent) {
         item.appendChild(del);
   
         parent.appendChild(item);
+        i++;
     }
   }
 
