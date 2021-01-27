@@ -3,7 +3,6 @@
 session_start();
 
 $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
-print_r($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +21,8 @@ print_r($_SESSION);
       $_SESSION["bridle"] = 0;
       $_SESSION["blanket"] = 0;
       $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
+
+      print_r($_SESSION);
 
 
     ?>
