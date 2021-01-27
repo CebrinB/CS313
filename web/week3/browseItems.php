@@ -37,7 +37,7 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
         <li>
           <h5>Saddle</h5></br>
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
-          <input type="number" name="saddle" id="saddle" placeholder="Quantity">
+          <input type="number" name="saddle" value="<?php echo $_SESSION["saddle"];?>" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm" onclick="">Add to Cart</button>
         </li>
         <li>
