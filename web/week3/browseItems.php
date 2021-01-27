@@ -2,7 +2,6 @@
 // Start the session
 session_start();
 
-$_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
       include './navbar.php';
 
 
-      $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
+      $_SESSION["items"] = $_SESSION["saddle"] + $_SESSION["bridle"] + $_SESSION["blanket"];
 
       print_r($_SESSION);
 
