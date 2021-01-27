@@ -9,20 +9,19 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 <html lang="en">
   <?php
 
-  include '../head.php';
+  include './head.php';
 
   ?>
   <body>
     <?php
 
-      include '../navbar.php';
+      include './navbar.php';
 
       $_SESSION["saddle"] = 0;
       $_SESSION["bridle"] = 0;
       $_SESSION["blanket"] = 0;
       $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 
-      print_r($_SESSION);
 
     ?>
     
@@ -33,27 +32,28 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
-    <form action="" method="POST">
+    <form action="browseItems.php" method="POST">
       <ul>
         <li>
           <h5>Saddle</h5></br>
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
           <input type="number" name="saddle" id="saddle" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm" onclick="javascript:addToCart()">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="">Add to Cart</button>
         </li>
         <li>
           <h5>Bridle</h5></br>
           <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
           <input type="number" name="bridle" id="bridle" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm" onclick="javascript:addToCart()">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="">Add to Cart</button>
         </li>
         <li>
           <h5>Blanket</h5></br>
         <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
           <input type="number" name="blanket" id ="blanket" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm" onclick="javascript:addToCart()">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="">Add to Cart</button>
         </li>
       </ul>
+      <button type="submit" class="btn btn-primary btn-sm" value="View Cart"></button>
     </form>
 
     <a href="./week3/viewCart.php"><button class="btn btn-primary btn-sm" value="View Cart"></button></a>
@@ -62,7 +62,7 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 
     <?php
 
-      include '../footer.php';
+      include './footer.php';
 
     ?>
   </body>
