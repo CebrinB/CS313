@@ -5,7 +5,7 @@
   $_SESSION["bridle"] = $_POST["bridle"];
   $_SESSION["blanket"] = $_POST["blanket"];
 
-  print_r($_SESSION);
+  
 
 
   ?>
