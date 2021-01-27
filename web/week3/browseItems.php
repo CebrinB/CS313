@@ -17,9 +17,7 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 
       include './navbar.php';
 
-      $_SESSION["saddle"] = 0;
-      $_SESSION["bridle"] = 0;
-      $_SESSION["blanket"] = 0;
+
       $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
 
       print_r($_SESSION);
