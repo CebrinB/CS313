@@ -4,7 +4,7 @@ function renderShoppingCartItems(parent) {
   let numBlankets = document.querySelector('#blankets').innerHTML;
 
   let i = 0;
-  while (i < numSaddles) {
+  while (i < 2) {
     let item = document.createElement('li');
         
         /*item.addEventListener('click', e => {
