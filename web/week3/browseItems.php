@@ -8,7 +8,7 @@ session_start();
 <html lang="en">
   <?php
 
-  include '/head.php';
+  include '/web/head.php';
 
   ?>
   <body>
