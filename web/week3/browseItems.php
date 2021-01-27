@@ -66,6 +66,19 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
       include '../footer.php';
 
     ?>
-    <script src="main.js" type="module"></script>
+    <script src="main.js" type="module">
+      
+      function addToCart() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              console.log(document.querySelector('#saddle').value);
+            }
+        };
+        xmlhttp.open("POST", "functions.php?", true);
+        xmlhttp.send();
+      }
+
+    </script>
   </body>
 </html>
