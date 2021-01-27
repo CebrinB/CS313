@@ -67,11 +67,11 @@ session_start();
           <input type="number" name="blanket" id ="blanket" placeholder="Quantity">
         </li>
       </ul>
-      <button type="submit" class="btn btn-primary btn-sm" value="View Cart"></button>
+      <button type="submit" class="btn btn-primary btn-sm">Add to Cart</button>
     </form>
 
-    <a href="viewCart.php"><button class="btn btn-primary btn-sm" value="View Cart"></button></a>
-    <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
+    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
+    <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
 
 
     <?php
