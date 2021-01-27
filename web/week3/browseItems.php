@@ -47,20 +47,20 @@ session_start();
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
     <form action="browseItems.php" method="POST">
-      <ul>
-        <li>
+      <ul class="list-group">
+        <li class="list-group-item">
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
           <span><h5>Saddle</h5></span>
           <span><h5>Price: $899.95</h5></span>
           <input type="number" name="saddle" placeholder="Quantity">
         </li>
-        <li>
+        <li class="list-group-item">
           <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
           <span><h5>Bridle</h5></span>
           <span><h5>Price: $399.95</h5></span>
           <input type="number" name="bridle" id="bridle" placeholder="Quantity">
         </li>
-        <li>
+        <li class="list-group-item">
         <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
         <span><h5>Blanket</h5></span>
           <span><h5>Price: $199.95</h5></span>
