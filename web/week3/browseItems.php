@@ -31,7 +31,7 @@ session_start();
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
-    <form action="/browseItems.php" method="POST">
+    <form action="/week3/browseItems.php" method="POST">
       <ul>
         <li>
           <h5>Saddle</h5></br>
