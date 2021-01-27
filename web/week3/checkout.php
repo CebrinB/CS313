@@ -16,6 +16,10 @@ session_start();
 
     ?>
 
+    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
+    <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
+    <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
+
     <div id="emptyCart" style="display:none"><?php echo $_SESSION['items']; ?></div>
 
     <!-- Content Dynamically Generated in main.js file -->

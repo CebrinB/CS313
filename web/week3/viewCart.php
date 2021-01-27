@@ -17,6 +17,10 @@ session_start();
 
     ?>
 
+    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
+    <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
+    <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
+
     <!-- Check for an empty cart, display redirect message to user if empty -->
     <div id="emptyCart" style="display:none"><?php echo $_SESSION['items']; ?></div>
     <h3 id="emptyCartLink">There are no items in your cart. Check out items for purchase at our <a href="/week3/browseItems.php">store page.</a></h3>

@@ -4,40 +4,40 @@ function renderShoppingCartItems(parent) {
   let numBlankets = document.querySelector('#blankets').innerHTML;
 
   let i = 0;
-  while (i < 2) {
+  while (i < numSaddles) {
     let item = document.createElement('li');
         
-        /*item.addEventListener('click', e => {
+        item.addEventListener('click', e => {
           let panel = e.target.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
           panel.style.maxHeight = "300px";
           }
-        });*/
+        });
 
         let pic = document.createElement('a');
         pic.innerHTML = `
         <img class="pic" src="saddle.jfif" alt="picture of dressage saddle">`;
-        /*pic.addEventListener('click', e => {
+        pic.addEventListener('click', e => {
           let panel = e.target.parentElement.parentElement.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
           panel.style.maxHeight = "300px";
           }
-        });*/
+        });
   
         let name = document.createElement('span');
         name.innerHTML = 'Black Dressage Saddle';
-        /*name.addEventListener('click', e => {
+        name.addEventListener('click', e => {
           let panel = e.target.parentElement.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
           panel.style.maxHeight = "300px";
           }
-        });*/
+        });
         
 
         let del = document.createElement('a');
