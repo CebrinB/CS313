@@ -2,13 +2,15 @@ function addToCart() {
   var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("txtHint").innerHTML = this.responseText;
+              console.log(document.querySelector('#saddle').value);
             }
         };
-        xmlhttp.open("POST", "browseItems.php?", true);
+        xmlhttp.open("POST", "functions.php?", true);
         xmlhttp.send();
+}
 
-} <?php
+
+/*<?php
 start_session();
 if(isset($_POST['qty'])){
   $qty = $_POST['qty']; 
@@ -20,4 +22,4 @@ if(isset($_POST['qty'])){
 }else{
   echo "What the hell are you doing?";
 }
-?>
+?>*/
