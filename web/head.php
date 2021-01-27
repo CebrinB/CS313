@@ -15,7 +15,7 @@
               console.log(document.querySelector('#saddle').value);
             }
         };
-        xmlhttp.open("POST", "functions.php?", true);
+        xmlhttp.open("GET", "functions.php", true);
         xmlhttp.send();
       }
 

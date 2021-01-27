@@ -29,11 +29,11 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
     <link rel="stylesheet" href="/week3/week3Styles.css">
 
     <!-- Page Content -->
-    <a href="/week3/viewCart.php"><input value="View Cart" class="btn btn-primary btn-sm"></button></a>
+    <a href="./week3/viewCart.php"><input value="View Cart" class="btn btn-primary btn-sm"></button></a>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
-    <form action="/week3/viewCart.php" method="POST">
+    <form action="" method="POST">
       <ul>
         <li>
           <h5>Saddle</h5></br>
@@ -53,11 +53,10 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
           <input type="number" name="blanket" id ="blanket" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm" onclick="javascript:addToCart()">Add to Cart</button>
         </li>
-        
       </ul>
-      <input type="submit" class="btn btn-primary btn-sm" value="View Cart"></button>
     </form>
 
+    <a href="./week3/viewCart.php"><button class="btn btn-primary btn-sm" value="View Cart"></button></a>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
 
 
@@ -66,19 +65,5 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
       include '../footer.php';
 
     ?>
-    <script>
-      console.log("here2");
-      function addToCart() {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              console.log(document.querySelector('#saddle').value);
-            }
-        };
-        xmlhttp.open("POST", "functions.php?", true);
-        xmlhttp.send();
-      }
-
-    </script>
   </body>
 </html>
