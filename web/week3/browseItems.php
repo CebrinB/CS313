@@ -34,9 +34,6 @@ session_start();
 
       $_SESSION['items'] += $qty;
 
-      print_r($_SESSION);
-
-
     ?>
     
     <link rel="stylesheet" href="week3Styles.css">
