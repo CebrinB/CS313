@@ -1,34 +1,26 @@
-console.log("here");
-
-function addToCart() {
-  var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              console.log(document.querySelector('#saddle').value);
-            }
-        };
-        xmlhttp.open("POST", "functions.php?", true);
-        xmlhttp.send();
+function renderShoppingCartItems(parent) {
+  let div = document.createElement('div');
+  div.setAttribute('id', 'instructions');
+  div.innerHTML =`
+  <div>
+    <p>Add a horse to see it's possible coat color!</p>
+  </div>`;
+  parent.appendChild(div);
+  return;
 }
+
+
+
+
+
+console.log(document.querySelector('#saddles'));
+
 
 window.addEventListener("load", () => {
   console.log(document.querySelector('#emptyCart').innerHTML);
   if (document.querySelector('#emptyCart').innerHTML > 0) {
     document.querySelector('#emptyCartLink').style.display = "none";
   }
+  renderShoppingCartItems(document.querySelector('#items'));
 });
 
-
-/*<?php
-start_session();
-if(isset($_POST['qty'])){
-  $qty = $_POST['qty']; 
-  if(ctype_digit($qty) || is_integer($qty)){
-    $output = $qty * 250;
-    $_SESSION['qty'] = $output;
-    echo "Updated to \$$output";
-  }
-}else{
-  echo "What the hell are you doing?";
-}
-?>*/

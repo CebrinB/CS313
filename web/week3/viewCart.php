@@ -17,11 +17,21 @@ session_start();
 
     ?>
 
+    <!-- Check for an empty cart, display redirect message to user if empty -->
     <div id="emptyCart" style="display:none"><?php echo $_SESSION['items']; ?></div>
-
-    <!-- Content Dynamically Generated in main.js file -->
     <h3 id="emptyCartLink">There are no items in your cart. Check out items for purchase at our <a href="/week3/browseItems.php">store page.</a></h3>
     
+    <!-- See main.js for dynamically generated HTML here -->
+    <!-- List of items in cart -->
+    <div id="saddles" style="display:none"><?php echo $_SESSION['saddle']; ?></div>
+    <div id="bridles" style="display:none"><?php echo $_SESSION['bridle']; ?></div>
+    <div id="blankets" style="display:none"><?php echo $_SESSION['blanket']; ?></div>
+
+    <div id="main">
+        <ul id="items">
+        </ul>
+      </div>
+
     <?php
 
       include '../footer.php';
