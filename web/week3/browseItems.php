@@ -16,8 +16,23 @@ session_start();
 
       include '../navbar.php';
 
+      $qty = 0;
 
-      $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
+      if(isset($_POST['saddle'])){
+        $_SESSION['saddle'] = $_POST['saddle'];
+        $qty += $_POST['saddle'];
+
+      }
+      if(isset($_POST['bridle'])){
+        $_SESSION["bridle"] = $_POST["bridle"];
+        $qty += $_POST['bridle'];
+      }
+      if(isset($_POST['blanket'])){
+        $_SESSION["blanket"] = $_POST["blanket"];
+        $qty += $_POST['blanket'];
+      }
+
+      $_SESSION['items'] += $qty;
 
       print_r($_SESSION);
 
