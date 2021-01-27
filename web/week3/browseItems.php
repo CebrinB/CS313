@@ -8,13 +8,13 @@ session_start();
 <html lang="en">
   <?php
 
-  include './head.php';
+  include '/head.php';
 
   ?>
   <body>
     <?php
 
-      include './navbar.php';
+      include '/navbar.php';
 
 
       $_SESSION["items"] = $_SESSION["saddle"] + $_SESSION["bridle"] + $_SESSION["blanket"];
@@ -27,11 +27,11 @@ session_start();
     <link rel="stylesheet" href="/week3/week3Styles.css">
 
     <!-- Page Content -->
-    <a href="./week3/viewCart.php"><input value="View Cart" class="btn btn-primary btn-sm"></button></a>
+    <a href="/week3/viewCart.php"><input value="View Cart" class="btn btn-primary btn-sm"></button></a>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
-    <form action="browseItems.php" method="POST">
+    <form action="/browseItems.php" method="POST">
       <ul>
         <li>
           <h5>Saddle</h5></br>
@@ -55,13 +55,13 @@ session_start();
       <button type="submit" class="btn btn-primary btn-sm" value="View Cart"></button>
     </form>
 
-    <a href="./week3/viewCart.php"><button class="btn btn-primary btn-sm" value="View Cart"></button></a>
+    <a href="/week3/viewCart.php"><button class="btn btn-primary btn-sm" value="View Cart"></button></a>
     <button id="checkout" class="btn btn-primary btn-sm">Go to Checkout</button>
 
 
     <?php
 
-      include './footer.php';
+      include '/footer.php';
 
     ?>
   </body>
