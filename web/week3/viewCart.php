@@ -14,12 +14,13 @@ session_start();
     <?php
 
       include '../navbar.php';
-      echo $_SESSION["saddle"] . ".<br>";
 
     ?>
 
+    <div id="emptyCart" style="display:none"><?php echo $_SESSION['items']; ?></div>
+
     <!-- Content Dynamically Generated in main.js file -->
-    <h3>There are no items in your cart. Check out items for purchase at our <a href="/week3/browseItems.php">store page.</a></h3>
+    <h3 id="emptyCartLink">There are no items in your cart. Check out items for purchase at our <a href="/week3/browseItems.php">store page.</a></h3>
     
     <?php
 

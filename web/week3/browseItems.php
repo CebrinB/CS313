@@ -19,16 +19,16 @@ session_start();
       $qty = 0;
 
       if(isset($_POST['saddle'])){
-        $_SESSION['saddle'] = $_POST['saddle'];
+        $_SESSION['saddle'] += $_POST['saddle'];
         $qty += $_POST['saddle'];
 
       }
       if(isset($_POST['bridle'])){
-        $_SESSION["bridle"] = $_POST["bridle"];
+        $_SESSION["bridle"] += $_POST["bridle"];
         $qty += $_POST['bridle'];
       }
       if(isset($_POST['blanket'])){
-        $_SESSION["blanket"] = $_POST["blanket"];
+        $_SESSION["blanket"] += $_POST["blanket"];
         $qty += $_POST['blanket'];
       }
 
@@ -51,7 +51,7 @@ session_start();
         <li>
           <h5>Saddle</h5></br>
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
-          <input type="number" name="saddle" value="<?php echo $_SESSION["saddle"];?>" placeholder="Quantity">
+          <input type="number" name="saddle" placeholder="Quantity">
           <button type="button" class="btn btn-primary btn-sm" onclick="">Add to Cart</button>
         </li>
         <li>

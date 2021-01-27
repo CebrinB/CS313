@@ -11,6 +11,13 @@ function addToCart() {
         xmlhttp.send();
 }
 
+window.addEventListener("load", () => {
+  console.log(document.querySelector('#emptyCart').innerHTML);
+  if (document.querySelector('#emptyCart').innerHTML > 0) {
+    document.querySelector('#emptyCartLink').style.display = "none";
+  }
+});
+
 
 /*<?php
 start_session();
