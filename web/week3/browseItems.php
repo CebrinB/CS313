@@ -32,25 +32,25 @@ $_SESSION["items"] = $_POST["saddle"] + $_POST["bridle"] + $_POST["blanket"];
     
     <p>Items in Cart: <?php echo $_SESSION["items"] ?></p>
 
-    <form action="/week3/viewCart.php" method="post">
+    <form action="/week3/viewCart.php" method="POST">
       <ul>
         <li>
           <h5>Saddle</h5></br>
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
           <input type="text" name="saddle" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="addToCart()">Add to Cart</button>
         </li>
         <li>
           <h5>Bridle</h5></br>
           <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
           <input type="text" name="bridle" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="addToCart()">Add to Cart</button>
         </li>
         <li>
           <h5>Blanket</h5></br>
         <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
           <input type="text" name="blanket" placeholder="Quantity">
-          <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="addToCart()">Add to Cart</button>
         </li>
         
       </ul>

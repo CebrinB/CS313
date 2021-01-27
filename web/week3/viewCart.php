@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,7 @@ session_start();
     <?php
 
       include '../navbar.php';
+      echo $_SESSION["saddle"] . ".<br>";
 
     ?>
 
