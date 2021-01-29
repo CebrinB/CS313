@@ -1,0 +1,25 @@
+CREATE SCHEMA week04;
+
+CREATE TABLE week04.user (
+user_id SERIAL NOT NULL PRIMARY KEY,
+display_name VARCHAR(56) NOT NULL,
+password VARCHAR(56) NOT NULL
+);
+
+CREATE TABLE week04.channel (
+channel_id SERIAL NOT NULL PRIMARY KEY,
+item_name TEXT NOT NULL,
+item_price SMALLINT NOT NULL,
+post_id TEXT NOT NULL REFERENCES week04.discussionPost(post_id)
+);
+
+CREATE TABLE week04.discussionPost (
+post_id SERIAL NOT NULL PRIMARY KEY,
+user_id INT NOT NULL REFERENCES week04.user(user_id),
+display_name VARCHAR(56) NOT NULL REFERENCES week04.user(display_name),
+rating ENUM('1','2','3','4','5'),
+title TEXT NOT NULL,
+content TEXT NOT NULL,
+timestamp TIMESTAMP(8)
+);
+
