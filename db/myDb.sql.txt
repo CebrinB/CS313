@@ -8,8 +8,8 @@ password VARCHAR(56) NOT NULL,
 billing_address VARCHAR(56) NOT NULL,
 billing_city TEXT NOT NULL,
 billing_state TEXT NOT NULL,
-billing_zip SMALLINT NOT NULL,
-billing_phone SMALLINT NOT NULL,
+billing_zip INT NOT NULL,
+billing_phone VARCHAR(15) NOT NULL,
 display_name VARCHAR(56) NOT NULL
 );
 
@@ -20,8 +20,8 @@ location_name VARCHAR(56) NOT NULL,
 location_address VARCHAR(56) NOT NULL,
 location_city TEXT NOT NULL,
 location_state TEXT NOT NULL,
-location_zip SMALLINT NOT NULL,
-location_phone SMALLINT NOT NULL
+location_zip INT NOT NULL,
+location_phone VARCHAR(15) NOT NULL
 );
 
 //tables for items sold in store
@@ -30,27 +30,26 @@ item_id SERIAL NOT NULL PRIMARY KEY,
 item_name TEXT NOT NULL,
 item_price DECIMAL(8, 2) NOT NULL,
 item_description VARCHAR(255) NOT NULL,
-channel_id INT NOT NULL REFERENCES ecommerce.channel(channel_id)
 );
 
 //tables for customer reviews
+CREATE TABLE ecommerce.review (
+review_id SERIAL NOT NULL PRIMARY KEY,
+user_id INT NOT NULL REFERENCES ecommerce.user(user_id),
+rating SMALLINT NOT NULL CHECK (0<rating AND rating<=5),
+title TEXT NOT NULL,
+content TEXT NOT NULL,
+timestamp TIMESTAMP(6)
+);
+
 CREATE TABLE ecommerce.channel (
 channel_id SERIAL NOT NULL PRIMARY KEY,
 item_id INT NOT NULL REFERENCES ecommerce.item(item_id),
-item_name TEXT NOT NULL REFERENCES ecommerce.item(item_name),
-item_price DECIMAL(8, 2) NOT NULL REFERENCES ecommerce.item(item_price),
-post_id TEXT NOT NULL REFERENCES ecommerce.discussionPost(post_id)
+review_id INT NOT NULL REFERENCES ecommerce.review(review_id)
 );
 
-CREATE TABLE ecommerce.discussionPost (
-post_id SERIAL NOT NULL PRIMARY KEY,
-user_id INT NOT NULL REFERENCES ecommerce.user(user_id),
-display_name VARCHAR(56) NOT NULL REFERENCES ecommerce.user(display_name),
-user_city TEXT NOT NULL REFERENCES ecommerce.user(billing_city),
-user_state TEXT NOT NULL REFERENCES ecommerce.user(billing_state),
-rating ENUM('1','2','3','4','5'),
-title TEXT NOT NULL,
-content TEXT NOT NULL,
-timestamp TIMESTAMP(8)
-);
+ALTER TABLE ecommerce.item 
+ ADD channel_id INT NOT NULL 
+ REFERENCES ecommerce.channel(channel_id);
+
 
