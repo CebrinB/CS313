@@ -5,10 +5,7 @@ CREATE TABLE ecommerce.user (
 user_id SERIAL NOT NULL PRIMARY KEY,
 user_name VARCHAR(56) NOT NULL,
 password VARCHAR(56) NOT NULL,
-billing_address VARCHAR(56) NOT NULL,
-billing_city TEXT NOT NULL,
-billing_state TEXT NOT NULL,
-billing_zip INT NOT NULL,
+billing_address INT NOT NULL REFERENCES ecommerce.address(address_id),
 billing_phone VARCHAR(15) NOT NULL,
 display_name VARCHAR(56) NOT NULL
 );
@@ -17,10 +14,7 @@ display_name VARCHAR(56) NOT NULL
 CREATE TABLE ecommerce.location (
 location_id SERIAL NOT NULL PRIMARY KEY,
 location_name VARCHAR(56) NOT NULL,
-location_address VARCHAR(56) NOT NULL,
-location_city TEXT NOT NULL,
-location_state TEXT NOT NULL,
-location_zip INT NOT NULL,
+location_address INT NOT NULL REFERENCES ecommerce.address(address_id),
 location_phone VARCHAR(15) NOT NULL
 );
 
@@ -40,16 +34,22 @@ rating SMALLINT NOT NULL CHECK (0<rating AND rating<=5),
 title TEXT NOT NULL,
 content TEXT NOT NULL,
 timestamp TIMESTAMP(6)
+item_id INT NOT NULL REFERENCES ecommerce.item(item_id);
 );
 
-CREATE TABLE ecommerce.channel (
-channel_id SERIAL NOT NULL PRIMARY KEY,
-item_id INT NOT NULL REFERENCES ecommerce.item(item_id),
-review_id INT NOT NULL REFERENCES ecommerce.review(review_id)
+//table for addresses
+CREATE TABLE ecommerce.address (
+address_id SERIAL NOT NULL PRIMARY KEY,
+address VARCHAR(56) NOT NULL,
+city TEXT NOT NULL,
+state TEXT NOT NULL,
+zip INT NOT NULL,
 );
 
-ALTER TABLE ecommerce.item 
- ADD channel_id INT NOT NULL 
- REFERENCES ecommerce.channel(channel_id);
+//testing purposes only
+CREATE TABLE ecommerce.test (
+ testID SERIAL NOT NULL PRIMARY KEY,
+ name VARCHAR(26) NOT NULL
+ );
 
 
