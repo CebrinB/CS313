@@ -24,6 +24,11 @@ catch (PDOException $ex)
   die();
 }
 
-echo $dbHost;
+foreach ($db->query('SELECT * FROM ecommerce.user') as $row)
+{
+  echo 'user: ' . $row['user_name'];
+  echo ' password: ' . $row['password'];
+  echo '<br/>';
+}
 
 ?>
