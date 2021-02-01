@@ -18,7 +18,7 @@
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="/week3/browseItems.php">week3 - Storefront</a></li>
-          <li><a href="#"></a></li>
+          <li><a href="/week5/practiceQuery.php">week5 - Practice Query</a></li>
         </ul>
       </li>
         <li><a href="#">Contact</a></li>
