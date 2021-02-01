@@ -24,6 +24,6 @@ catch (PDOException $ex)
   die();
 }
 
-echo 'This worked.';
+echo $dbHost;
 
 ?>
