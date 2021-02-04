@@ -198,11 +198,10 @@ function renderShoppingCartItems(parent) {
 
 
 window.addEventListener("load", () => {
-  debugger;
   console.log(document.querySelector('#emptyCart').innerHTML);
   if (document.querySelector('#emptyCart').innerHTML > 0) {
     document.querySelector('#emptyCartLink').style.display = "none";
   }
-  renderShoppingCartItems(document.querySelector('#items'));
+  //renderShoppingCartItems(document.querySelector('#items'));
 });
 
