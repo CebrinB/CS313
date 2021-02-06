@@ -22,9 +22,9 @@
           <h4>Categories</h4>
           <form>
             <ul class="nav nav-pills nav-stacked text-dark">
-              <li><a class="text-dark" href="shop.php" name="Saddle">Saddles</a></li>
-              <li><a class="text-dark" href="shop.php" name="Bridle">Bridles</a></li>
-              <li><a class="text-dark" href="shop.php" name="Blanket">Blankets</a></li>
+              <li><input type="submit" name="Saddle">Saddles</li>
+              <li><input type="submit" name="Bridle">Bridles</li>
+              <li><input type="submit" name="Blanket">Blankets</li>
             </ul><br>
           </form>
         </div>
