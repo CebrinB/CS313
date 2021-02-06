@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img class="navbar-brand" src="../images/logo.jpg" alt="Logo"></a>
+      <a class="navbar-brand" href="#">Billings Saddlery</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
