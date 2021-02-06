@@ -11,7 +11,7 @@
 
     <!-- Page Content -->
     <div class="jumbotron text-left">
-      <div class="container text-center">
+      <div class="container">
         <h1>The Best in Tack & Equipment.</h1>      
         <p>Find Exactly What You Need</p>
         <a href="shop.php" role="button">START SHOPPING NOW</a>
@@ -23,8 +23,14 @@
       <h3>Shop By Category</h3><br>
       <div class="row">
         <div class="col-sm-4">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Current Project</p>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../images/saddle.jfif" alt="Black dressage saddle">
+            <div class="card-body">
+              <h5 class="card-title">Saddles</h5>
+              <p class="card-text">Shop our Dressage saddles</p>
+              <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
+            </div>
+          </div>
         </div>
         <div class="col-sm-4"> 
           <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
