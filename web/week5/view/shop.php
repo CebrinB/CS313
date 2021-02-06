@@ -15,12 +15,12 @@
     <!-- Page Content -->
     <div class="container-fluid">
       <div class="row content">
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-3 sidenav text-dark">
           <h4>Categories</h4>
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Saddles</a></li>
-            <li><a href="#">Bridles</a></li>
-            <li><a href="#">Blankets</a></li>
+          <ul class="nav nav-pills nav-stacked text-dark">
+            <li><a class="text-dark" href="#">Saddles</a></li>
+            <li><a class="text-dark" href="#">Bridles</a></li>
+            <li><a class="text-dark" href="#">Blankets</a></li>
           </ul><br>
         </div>
         <div class="col-sm-9">
