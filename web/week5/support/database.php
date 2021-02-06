@@ -17,8 +17,8 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $statement = $db->prepare('SELECT * FROM ecommerce.item');
-  $statement->execute();
+  //$statement = $db->prepare('SELECT * FROM ecommerce.item');
+  //$statement->execute();
 }
 catch (PDOException $ex)
 {
