@@ -27,8 +27,13 @@ catch (PDOException $ex)
   die();
 }
 
-echo $statement;
+//Go through each result
+  //while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+    //echo "<div><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b> - \"" . $row['content'] . "\"</div>";
+  //}
 
+  $row = $statement->fetch(PDO::FETCH_ASSOC));
+  echo $row;
 
 
 ?>
