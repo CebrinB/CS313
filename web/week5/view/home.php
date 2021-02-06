@@ -14,7 +14,7 @@
       <div class="container text-center">
         <h1>The Best in Tack & Equipment.</h1>      
         <p>Find Exactly What You Need</p>
-        <a class="btn btn-dark" href="shop.php" role="button">START SHOPPING NOW</a>
+        <a href="shop.php" role="button">START SHOPPING NOW</a>
       </div>
     </div>
     

@@ -11,6 +11,10 @@ body {
   background-color: #7d5839;
 }
 
+nav, footer, a {
+  color:white;
+}
+
 .navbar-toggle button {
   color: white;
 }
