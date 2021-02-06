@@ -16,22 +16,26 @@ try
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-  //$statement = $db->prepare('SELECT * FROM ecommerce.item');
-  //$statement->execute();
 }
 catch (PDOException $ex)
 {
   echo 'Error!: ' . $ex->getMessage();
-  include('database_error.php')
   die();
 }
 
-/echo "<h1>Scripture Resources</h1></br>";
-foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
-  {
-    echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['item_id'] . " " . $row['item_name'] . ":" . $row['item_price'] . "</b></a></div>";
-  }
-
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+echo "<h1>Scripture Resources</h1></br>";
+  foreach ($db->query('SELECT book, chapter, verse FROM team05.scriptures') as $row)
+    {
+      echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b></a></div>";
+    }
+}
 
 ?>
+
+<html>
+  <form method="POST">
+    <input type="text" name="book">
+    <input type="submit" value="submit">
+  </form>
+</html>
