@@ -27,8 +27,6 @@
   
   include 'head.php';
 
-  echo $db;
-
 ?>
 
   <body>
