@@ -34,11 +34,13 @@
         </div>
         <div class="col-sm-4"> 
           <img src="../images/bridle.jfif" class="img-responsive" style="width:100%" alt="Chestnut horse with bridle">
-          <p>Bridles</p>    
+          <p>Bridles</p>
+          <a href="shop.php" class="btn btn-primary">SHOP NOW</a>    
         </div>
         <div class="col-sm-4">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Project 2</p>
+          <img src="../images/blanket.jfif" class="img-responsive" style="width:100%" alt="Bay horse with blue blanket">
+          <p>Blankets</p>
+          <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
         </div>
       </div>
     </div><br>
