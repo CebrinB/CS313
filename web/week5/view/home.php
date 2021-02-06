@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../images/saddle2.jpg" height="150" width="80" alt="Black dressage saddle">
+            <img class="card-img-top" src="../images/saddle2.jpg" width="100%" alt="Black dressage saddle">
             <div class="card-body">
               <h5 class="card-title">Saddles</h5>
               <p class="card-text">Shop our Dressage saddles</p>
@@ -33,8 +33,8 @@
           </div>
         </div>
         <div class="col-sm-4"> 
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-          <p>Project 2</p>    
+          <img src="../images/bridle.jfif" class="img-responsive" style="width:100%" alt="Chestnut horse with bridle">
+          <p>Bridles</p>    
         </div>
         <div class="col-sm-4">
           <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
