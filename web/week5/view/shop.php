@@ -24,7 +24,7 @@
         {
           echo
           '<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../images/' . $row['item_name'] . $row['item_id'] . '.jpg" alt="">
+            <img class="card-img-top" src="../images/' . $row['item_name'] . $row['item_id'] . '.jpg" width="100%" alt="">
             <div class="card-body">  
               <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
               <p class="card-text">' . $row['item_description'] .'</p>
