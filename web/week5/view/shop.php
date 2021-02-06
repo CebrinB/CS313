@@ -7,6 +7,7 @@
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     print_r($_POST);
   }
+  echo 'test';
 
   include 'head.php';
 
