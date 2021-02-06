@@ -1,49 +1,22 @@
 <?php
-// Start the session
-session_start();
+  // Start the session
+  session_start();
+  
+  include 'head.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <?php
-
-  include '../head.php';
-
-  ?>
   <body>
-    <?php
-
-      include '../navbar.php';
-
-      $qty = 0;
-
-      if(isset($_POST['saddle'])){
-        $_SESSION['saddle'] += $_POST['saddle'];
-        $qty += $_POST['saddle'];
-
-      }
-      if(isset($_POST['bridle'])){
-        $_SESSION["bridle"] += $_POST["bridle"];
-        $qty += $_POST['bridle'];
-      }
-      if(isset($_POST['blanket'])){
-        $_SESSION["blanket"] += $_POST["blanket"];
-        $qty += $_POST['blanket'];
-      }
-
-      $_SESSION['items'] += $qty;
-
-    ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/navbar.php'; ?>
     
-    <link rel="stylesheet" href="week3Styles.css">
+    <link rel="stylesheet" href="../css/ecommercestyles.css">
 
     <!-- Page Content -->
     <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
     <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
 
-    <form action="browseItems.php" method="POST">
+    <form action="home.php" method="POST">
       <ul class="list-group">
         <li class="list-group-item">
           <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
@@ -70,11 +43,11 @@ session_start();
     <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
     <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
 
+    <div>Image by <a href="https://pixabay.com/users/annajelec-465286/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5616954">annajelec</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5616954">Pixabay</a><br>
+    Image by <a href="https://pixabay.com/users/jodi442-6226968/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2665751">jodi442</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2665751">Pixabay</a><br>
+    Image by <a href="https://pixabay.com/users/rihaij-2145/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2348773">rihaij</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2348773">Pixabay</a>
+    </div>
 
-    <?php
-
-      include '../footer.php';
-
-    ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>
   </body>
 </html>
