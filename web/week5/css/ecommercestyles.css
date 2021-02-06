@@ -11,6 +11,10 @@ body {
   background-color: #7d5839;
 }
 
+h3 {
+  margin-top: 0px;
+}
+
 nav, footer, a {
   color:white;
 }
