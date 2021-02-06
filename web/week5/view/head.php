@@ -11,5 +11,5 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../css/ecommercestyles.css">
   </head>
