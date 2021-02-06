@@ -17,7 +17,7 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $statement = $db->prepare('SHOW TABLES FROM ecommerce');
+  $statement = $db->prepare('SHOW * FROM ecommerce');
   $statement->execute();
 }
 catch (PDOException $ex)
