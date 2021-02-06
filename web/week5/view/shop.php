@@ -4,7 +4,10 @@
   
   include '../support/database.php';
   
-  
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    print_r($_POST);
+  }
+
   include 'head.php';
 
 ?>
@@ -17,11 +20,13 @@
       <div class="row content">
         <div class="col-sm-3 sidenav text-dark">
           <h4>Categories</h4>
-          <ul class="nav nav-pills nav-stacked text-dark">
-            <li><a class="text-dark" href="#">Saddles</a></li>
-            <li><a class="text-dark" href="#">Bridles</a></li>
-            <li><a class="text-dark" href="#">Blankets</a></li>
-          </ul><br>
+          <form>
+            <ul class="nav nav-pills nav-stacked text-dark">
+              <li><a class="text-dark" href="shop.php" name="Saddle">Saddles</a></li>
+              <li><a class="text-dark" href="shop.php" name="Bridle">Bridles</a></li>
+              <li><a class="text-dark" href="shop.php" name="Blanket">Blankets</a></li>
+            </ul><br>
+          </form>
         </div>
         <div class="col-sm-9">
           <?php 
@@ -30,7 +35,7 @@
 
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
-            foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
+            foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
                 echo
                 '<div class="card col-sm-4">
