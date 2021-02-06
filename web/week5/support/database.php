@@ -32,8 +32,8 @@ catch (PDOException $ex)
     //echo "<div><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b> - \"" . $row['content'] . "\"</div>";
   //}
 
-  $row = $statement->fetch(PDO::FETCH_ASSOC));
-  echo $row;
+  //$row = $statement->fetch(PDO::FETCH_ASSOC));
+  echo 'howdy';
 
 
 ?>
