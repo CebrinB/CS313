@@ -25,9 +25,9 @@ catch (PDOException $ex)
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 echo "<h1>Scripture Resources</h1></br>";
-  foreach ($db->query('SELECT book, chapter, verse FROM team05.scriptures') as $row)
+  foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
     {
-      echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b></a></div>";
+      echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['item_id'] . " " . $row['item_name'] . ":" . $row['item_price'] . "</b></a></div>";
     }
 }
 
