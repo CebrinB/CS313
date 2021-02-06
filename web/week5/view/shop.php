@@ -24,12 +24,9 @@
         {
           echo
           '<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="' . $row['item_name'] . $row['item_id'] . '.jpg" alt="">
-            <div class="card-body">
-              <div>  
-                <h5 class="card-title">'. $row['item_name'] .'</h5>
-                <h5 class="card-title text-right">$'. $row['item_price'] .'</h5>
-              </div>
+            <img class="card-img-top" src="../images/' . $row['item_name'] . $row['item_id'] . '.jpg" alt="">
+            <div class="card-body">  
+              <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
               <p class="card-text">' . $row['item_description'] .'</p>
               <a href="#" class="btn btn-primary">Add to Cart</a>
             </div>
