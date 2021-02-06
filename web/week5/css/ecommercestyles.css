@@ -19,6 +19,7 @@ body {
 .jumbotron {
   background-image: url(../images/smallbanner.jpg);
   text-align: left;
+  color: white;
 }
 
 
