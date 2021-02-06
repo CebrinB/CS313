@@ -10,7 +10,7 @@
     <?php include 'navbar.php'; ?>
 
     <!-- Page Content -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron text-left">
       <div class="container text-center">
         <h1>The Best in Tack & Equipment.</h1>      
         <p>Find Exactly What You Need</p>
