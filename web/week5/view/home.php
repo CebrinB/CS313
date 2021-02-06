@@ -18,42 +18,26 @@
       </div>
     </div>
     
+    <!-- 3 cards below jumbotron -->
+    <div class="container text-center">    
+      <h3>Shop By Category</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Current Project</p>
+        </div>
+        <div class="col-sm-4"> 
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Project 2</p>    
+        </div>
+        <div class="col-sm-4">
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <p>Project 2</p>
+        </div>
+      </div>
+    </div><br>
     
-    
-    
-    
-    
-    
-    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
-    <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
-    <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>
-
-    <form action="home.php" method="POST">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <a href="#"><img class="card-img-top" src="saddle.jfif" width="125" height="125" alt="Horse Saddle"></a>
-          <span><h5>Saddle</h5></span>
-          <span><h5>Price: $899.95</h5></span>
-          <input type="number" name="saddle" placeholder="Quantity">
-        </li>
-        <li class="list-group-item">
-          <a href="#"><img class="card-img-top" src="bridle.jfif" width="125" height="125" alt="Horse Bridle"></a>
-          <span><h5>Bridle</h5></span>
-          <span><h5>Price: $399.95</h5></span>
-          <input type="number" name="bridle" id="bridle" placeholder="Quantity">
-        </li>
-        <li class="list-group-item">
-        <a href="#"><img class="card-img-top" src="blanket.jfif" width="125" height="125" alt="Horse Blanket"></a>
-        <span><h5>Blanket</h5></span>
-          <span><h5>Price: $199.95</h5></span>
-          <input type="number" name="blanket" id ="blanket" placeholder="Quantity">
-        </li>
-      </ul>
-      <button type="submit" class="btn btn-primary btn-sm">Add to Cart</button>
-    </form>
-
-    <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
-    <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
+  
 
     <div>Image by <a href="https://pixabay.com/users/annajelec-465286/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5616954">annajelec</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5616954">Pixabay</a><br>
     Image by <a href="https://pixabay.com/users/jodi442-6226968/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2665751">jodi442</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2665751">Pixabay</a><br>
