@@ -27,6 +27,6 @@ catch (PDOException $ex)
   die();
 }
 
-return $db;
+return $statement;
 
 ?>
