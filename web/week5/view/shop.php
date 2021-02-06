@@ -10,13 +10,7 @@
     <?php include 'navbar.php'; ?>
 
     <!-- Page Content -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container text-center">
-        <h1>The Best in Tack & Equipment.</h1>      
-        <p>Find Exactly What You Need</p>
-        <a class="btn btn-light" href="shop.php" role="button">START SHOPPING NOW</a>
-      </div>
-    </div>
+
     
     
     

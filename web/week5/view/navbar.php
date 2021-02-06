@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-dark">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/index.php">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="shop.php">Shop</a></li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments
         <span class="caret"></span></a>
