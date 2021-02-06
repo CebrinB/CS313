@@ -17,6 +17,11 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+  foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
+    {
+      echo 'howdy';
+      echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['item_id'] . " " . $row['item_name'] . ":" . $row['item_price'] . "</b></a></div>";
+    }
 }
 catch (PDOException $ex)
 {
@@ -30,7 +35,7 @@ echo "<h1>Items</h1></br>";
       echo 'howdy';
       echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['item_id'] . " " . $row['item_name'] . ":" . $row['item_price'] . "</b></a></div>";
     }
-    
+
 return $db;
 
 ?>
