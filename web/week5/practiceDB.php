@@ -26,12 +26,12 @@
   }
   
   
-  include 'head.php';
+  include '/view/head.php';
 
 ?>
 
   <body>
-    <?php include 'navbar.php'; ?>
+    <?php include '/view/navbar.php'; ?>
 
     <!-- Page Content -->
     <div>
@@ -47,6 +47,6 @@
 
  
 
-    <?php include 'footer.php'; ?>
+    <?php include '/view/footer.php'; ?>
   </body>
 </html>
