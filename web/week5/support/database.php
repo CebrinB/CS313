@@ -27,13 +27,11 @@ catch (PDOException $ex)
   die();
 }
 
-//Go through each result
-  //while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-    //echo "<div><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b> - \"" . $row['content'] . "\"</div>";
-  //}
-
-  //$row = $statement->fetch(PDO::FETCH_ASSOC));
-  echo 'howdy';
+/echo "<h1>Scripture Resources</h1></br>";
+foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
+  {
+    echo "<div><a href=\"/scriptureDetails.php\"><b>" . $row['item_id'] . " " . $row['item_name'] . ":" . $row['item_price'] . "</b></a></div>";
+  }
 
 
 ?>
