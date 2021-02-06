@@ -21,7 +21,7 @@
 
       echo "<h1>Items</h1></br>";
       
-      
+      echo '<div class="row">';
       foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item') as $row)
         {
           if ($r < 3) {
@@ -38,6 +38,7 @@
           }
           
         }
+        echo '</div>';
         
     ?></div>
 
