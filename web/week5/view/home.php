@@ -7,7 +7,7 @@
 ?>
 
   <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/navbar.php'; ?>
+    <?php include 'navbar.php'; ?>
     
     <link rel="stylesheet" href="../css/ecommercestyles.css">
 
@@ -48,6 +48,6 @@
     Image by <a href="https://pixabay.com/users/rihaij-2145/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2348773">rihaij</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2348773">Pixabay</a>
     </div>
 
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/footer.php'; ?>
+    <?php include 'footer.php'; ?>
   </body>
 </html>

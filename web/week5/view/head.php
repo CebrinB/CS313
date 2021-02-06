@@ -10,19 +10,6 @@
     <script src="https://kit.fontawesome.com/b631726285.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <script>
-        function addToCart() {
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                console.log(document.querySelector('#saddle').value);
-              }
-          };
-          xmlhttp.open("GET", "functions.php", true);
-          xmlhttp.send();
-        }
-
-      </script>
-    <link rel="shortcut icon" href="/floral-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
   </head>
