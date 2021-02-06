@@ -17,9 +17,6 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $statement = $db->prepare('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item');
-  $statement->execute();
-
 }
 catch (PDOException $ex)
 {
@@ -27,6 +24,6 @@ catch (PDOException $ex)
   die();
 }
 
-return $statement;
+return $db;
 
 ?>
