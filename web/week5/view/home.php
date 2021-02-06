@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="../css/ecommercestyles.css">
 
     <!-- Page Content -->
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>The Best in Tack & Equipment.</h1>      
+        <p>Find Exactly What You Need.</p>
+        <button>START SHOPPING NOW</button>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
     <a href="viewCart.php"><button class="btn btn-primary btn-sm">View Cart</button></a>
     <a href="checkout.php"><button class="btn btn-primary btn-sm">Go to Checkout</button></a>
     <div>Items in Cart: <?php echo $_SESSION["items"] ?></div>

@@ -9,10 +9,15 @@ body {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #9b95a2;
+  color: black;
 }
 
 .navbar-toggle button {
   color: white;
+}
+
+.jumbotron {
+  background-image: url(../images/banner.jpg);
 }
 
 
