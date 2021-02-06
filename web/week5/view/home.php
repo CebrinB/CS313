@@ -23,7 +23,7 @@
       <h3>Shop By Category</h3><br>
       <div class="row">
         <div class="col-sm-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18em;">
             <img class="card-img-top" src="../images/saddle2.jpg" alt="Black dressage saddle">
             <div class="card-body">
               <h5 class="card-title">Saddles</h5>
