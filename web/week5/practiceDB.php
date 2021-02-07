@@ -24,7 +24,7 @@
       $stmt->closeCursor();
 
       foreach ($rows as $row){
-        echo "<div><a href=\"scripturesDetails.php?id=" . $row["id"] . "\"><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b></a></div>";
+        echo "<div>" . $row['item_id'] . "</b></a></div>";
       }
         
     ?></div>
