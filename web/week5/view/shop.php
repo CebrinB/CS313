@@ -10,7 +10,7 @@
   $filter = $_GET[0];
   echo $filter;
 
-  $keys = array_keys($_POST);
+  $keys = array_keys($_GET);
 echo $keys[0];
 
   include 'head.php';
