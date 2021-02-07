@@ -16,8 +16,9 @@
     <div>
     <?php 
       echo "<h1>Items</h1></br>";
-      $query = 'SELECT * FROM ecommerce.item WHERE item_name :filter';
+      $query = 'SELECT * FROM ecommerce.item WHERE item_name :filt';
             $statement = $db->prepare($query);
+            $stmt->bindValue(':filt', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
             $statement->execute();
             $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
             $statement->closeCursor();
