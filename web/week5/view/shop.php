@@ -38,7 +38,9 @@
             } else $sql = 'SELECT * FROM ecommerce.item ORDER BY item_name';
             echo $sql;
             $stmt = $db->prepare($sql);
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
+            }
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $stmt->closeCursor();
