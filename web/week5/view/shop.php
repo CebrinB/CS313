@@ -40,12 +40,12 @@
 
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
-            $query = 'SELECT * FROM ecommerce.item WHERE item_name :filter';
-            $statement = $db->prepare($query);
-            $statement->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
-            $statement->execute();
-            $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
-            $statement->closeCursor();
+            $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
+            $stmt = $db->prepare($sql);
+            $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
+            $stmt->execute();
+            $infos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $stmt->closeCursor();
 
              foreach ($infos as $info) {
                echo $info['item_id'];
