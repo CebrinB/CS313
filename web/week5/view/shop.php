@@ -40,14 +40,14 @@
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
             $query = 'SELECT * FROM ecommerce.item WHERE item_name = '".$filter."' ORDER BY item_name';
-            $statement = $db->prepare($query);
-            $statement->execute();
-            $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
-            $statement->closeCursor();
+            // $statement = $db->prepare($query);
+            // $statement->execute();
+            // $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
+            // $statement->closeCursor();
 
-            foreach ($infos as $info) {
-              echo $info;
-            }
+            // foreach ($infos as $info) {
+            //   echo $info;
+            // }
             foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
                 echo
