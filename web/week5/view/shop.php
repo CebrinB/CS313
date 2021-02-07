@@ -7,6 +7,7 @@
   $filter = 'ALL';
 
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    print_r($_GET);
     $keys = array_keys($_GET);
     $filter = $keys[0];
   }
@@ -27,9 +28,9 @@
           <h4>Categories</h4>
           <form>
             <ul class="nav nav-pills nav-stacked text-dark">
-              <li><input type="submit" name="Saddle">Saddles</li>
-              <li><input type="submit" name="Bridle">Bridles</li>
-              <li><input type="submit" name="Blanket">Blankets</li>
+              <li><input type="submit" name="filter" value="Saddle">Saddles</li>
+              <li><input type="submit" name="filter" value="Bridle">Bridles</li>
+              <li><input type="submit" name="filter" value="Blanket">Blankets</li>
             </ul><br>
           </form>
         </div>
