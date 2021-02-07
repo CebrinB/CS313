@@ -7,11 +7,13 @@
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     print_r($_GET);
   }
-  echo 'test';
+  $filter = $_GET[0];
+  echo $filter;
 
   include 'head.php';
 
 ?>
+
 
   <body>
     <?php include 'navbar.php'; ?>
