@@ -4,12 +4,13 @@
   
   include '../support/database.php';
   
-  $filter = '*';
+  $filter = 'ALL';
 
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $keys = array_keys($_GET);
     $filter = $keys[0];
   }
+  echo $filter;
 
   include 'head.php';
 
@@ -39,7 +40,7 @@
 
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
-            $query = 'SELECT * FROM ecommerce.item WHERE item_name = '".$filter."' ORDER BY item_name';
+            //$query = 'SELECT * FROM ecommerce.item WHERE item_name = '".$filter."' ORDER BY item_name';
             // $statement = $db->prepare($query);
             // $statement->execute();
             // $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
