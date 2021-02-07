@@ -44,7 +44,7 @@
             $stmt = $db->prepare($sql);
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
             $stmt->execute();
-            $infos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $stmt->closeCursor();
 
             foreach ($rows as $row)
