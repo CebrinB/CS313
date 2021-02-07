@@ -47,10 +47,8 @@
             $infos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $stmt->closeCursor();
 
-             foreach ($infos as $info) {
-               echo $info['item_id'];
-             }
-            foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
+            foreach ($rows as $row)
+            //foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
                 echo
                 '<div class="card col-sm-4">
