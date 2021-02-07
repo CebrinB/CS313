@@ -16,9 +16,9 @@
     <div>
     <?php 
       echo "<h1>Items</h1></br>";
-      $sql = 'SELECT * FROM team05.scriptures WHERE book LIKE :book';
+      $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :book';
       $stmt = $db->prepare($sql);
-      $stmt->bindValue(':book', '%'.$_POST['book'].'%', PDO::PARAM_STR);
+      $stmt->bindValue(':book', '%'.$_GET['filter'].'%', PDO::PARAM_STR);
       $stmt->execute();
       $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $stmt->closeCursor();
@@ -30,9 +30,9 @@
     ?></div>
 
 <html>
-<form method="POST">
-<input type='text' name='book'>
-<input type='submit' value='submit'>
+<form method="GET">
+<input type='text' name='filter'>
+<input type='submit' value='Saddle'>
 </from>
 </html> 
 
