@@ -6,10 +6,9 @@
   
   $filter = 'ALL';
 
-  if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    print_r($_GET);
-    $keys = array_keys($_GET);
-    $filter = $_GET['filter'];
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    print_r($_POST);
+    $filter = $_POST['filter'];
   }
   echo $filter;
 
@@ -26,7 +25,7 @@
       <div class="row content">
         <div class="col-sm-3 sidenav text-dark">
           <h4>Categories</h4>
-          <form>
+          <form method="POST">
             <ul class="nav nav-pills nav-stacked text-dark">
               <li><input type="submit" name="filter" value="Saddle">Saddles</li>
               <li><input type="submit" name="filter" value="Bridle">Bridles</li>
@@ -43,12 +42,13 @@
             echo '<div class="row">';
             $query = 'SELECT * FROM ecommerce.item WHERE item_name :filter';
             $statement = $db->prepare($query);
+            $statement->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
             $statement->execute();
             $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
             $statement->closeCursor();
 
              foreach ($infos as $info) {
-               echo $info;
+               echo $info['item_id'];
              }
             foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
