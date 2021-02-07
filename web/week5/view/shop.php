@@ -36,7 +36,6 @@
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
             } else $sql = 'SELECT * FROM ecommerce.item';
-            echo $sql;
             $stmt = $db->prepare($sql);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
