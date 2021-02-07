@@ -5,13 +5,12 @@
   include '../support/database.php';
   
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    print_r($_GET);
-  }
-  $filter = $_GET[0];
+    $keys = array_keys($_GET);
+    $filter = $keys[0];
+  } else $filter = '*';
   echo $filter;
 
-  $keys = array_keys($_GET);
-echo $keys[0];
+
 
   include 'head.php';
 
