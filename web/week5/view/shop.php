@@ -3,14 +3,6 @@
   session_start();
   
   include '../support/database.php';
-  
-  $filter = 'ALL';
-
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
-    $filter = $_POST['filter'];
-  }
-  echo $filter;
 
   include 'head.php';
 
@@ -44,6 +36,7 @@
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
             } else $sql = 'SELECT * FROM ecommerce.item ORDER BY item_name';
+            echo $sql;
             $stmt = $db->prepare($sql);
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
             $stmt->execute();
