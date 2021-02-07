@@ -16,9 +16,9 @@
     <div>
     <?php 
       echo "<h1>Items</h1></br>";
-      $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :book';
+      $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
       $stmt = $db->prepare($sql);
-      $stmt->bindValue(':book', '%'.$_GET['filter'].'%', PDO::PARAM_STR);
+      $stmt->bindValue(':filter', '%'.$_GET['filter'].'%', PDO::PARAM_STR);
       $stmt->execute();
       $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $stmt->closeCursor();
