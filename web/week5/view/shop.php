@@ -19,6 +19,7 @@
           <h4>Categories</h4>
           <form method="POST">
             <ul class="nav nav-pills nav-stacked text-dark">
+              <li><a href="shop.php" type="button">All</li>
               <li><input type="submit" name="filter" value="Saddle">Saddles</li>
               <li><input type="submit" name="filter" value="Bridle">Bridles</li>
               <li><input type="submit" name="filter" value="Blanket">Blankets</li>
