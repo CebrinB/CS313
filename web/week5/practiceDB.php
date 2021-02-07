@@ -18,7 +18,7 @@
       echo "<h1>Items</h1></br>";
       $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
       $stmt = $db->prepare($sql);
-      $stmt->bindValue(':filter', '%'.$_GET['filter'].'%', PDO::PARAM_STR);
+      $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
       $stmt->execute();
       $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       $stmt->closeCursor();
@@ -30,9 +30,8 @@
     ?></div>
 
 <html>
-<form method="GET">
-<input type='text' name='filter'>
-<input type='submit' value='Saddle'>
+<form method="POST">
+<input type='submit' name="filter" value='Saddle'>
 </from>
 </html> 
 
