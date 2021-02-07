@@ -9,7 +9,7 @@
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     print_r($_GET);
     $keys = array_keys($_GET);
-    $filter = $keys[0];
+    $filter = $_GET['filter'];
   }
   echo $filter;
 
