@@ -40,6 +40,7 @@
 
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
+            $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
             } else $sql = 'SELECT * FROM ecommerce.item ORDER BY item_name';
