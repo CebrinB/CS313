@@ -35,7 +35,7 @@
             $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
-            } else $sql = 'SELECT * FROM ecommerce.item ORDER BY item_name';
+            } else $sql = 'SELECT * FROM ecommerce.item';
             echo $sql;
             $stmt = $db->prepare($sql);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
