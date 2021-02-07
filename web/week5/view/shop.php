@@ -4,12 +4,12 @@
   
   include '../support/database.php';
   
-  // $filter = 'p';
-  // if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-  //   $keys = array_keys($_GET);
-  //   $filter = $keys[0];
+  $filter = '*';
+  if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $keys = array_keys($_GET);
+    $filter = $keys[0];
 
-  // echo $filter;
+  echo $filter;
 
 
 
