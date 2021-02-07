@@ -42,10 +42,10 @@
             echo "<h1>Items</h1></br>";
             echo '<div class="row">';
             $query = 'SELECT * FROM ecommerce.item WHERE item_name :filter';
-            // $statement = $db->prepare($query);
-            // $statement->execute();
-            // $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
-            // $statement->closeCursor();
+             $statement = $db->prepare($query);
+             $statement->execute();
+             $infos = $statement->fetchAll(PDO::FETCH_ASSOC);
+             $statement->closeCursor();
 
             // foreach ($infos as $info) {
             //   echo $info;
