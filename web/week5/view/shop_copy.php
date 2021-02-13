@@ -100,7 +100,7 @@
             <?php
               $sql = '';
               //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-                $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE :filter';
+                $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE 1';
               //} else $sql = 'SELECT * FROM ecommerce.item';
               $stmt = $db->prepare($sql);
               //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
