@@ -44,7 +44,7 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-          <img class="card-img-top img-circle item" src="../images/Blanket6.jpg" width="100%" alt="Bay horse with blue blanket">
+          <img class="card-img-top img-circle item" src="../images/Blanket6.jpg" alt="Bay horse with blue blanket">
             <div class="card-body">
               <h5 class="card-title">Bridles</h5>
               <p class="card-text">Shop our Winter Blankets</p>
