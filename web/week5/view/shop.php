@@ -38,11 +38,11 @@
 
         <!-- Item cards -->
         <div class="col-sm-9">
+          <h1>Items</h1></br>
+          <div class="row">
           <?php 
             $c = 1;
 
-            echo "<h1>Items</h1></br>";
-            echo '<div class="row">';
             $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               $sql = 'SELECT * FROM ecommerce.item WHERE item_type LIKE :filter';
