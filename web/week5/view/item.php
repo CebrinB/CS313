@@ -7,16 +7,18 @@
   } else $_SESSION['cart'] += 1;
 
   include '../support/database.php';
+
+  $item_id = htmlspecialchars($_GET['item_id']);
  
-  $sql = 'SELECT * FROM ecommerce.item WHERE item_id = :item_id';
+  $sql = 'SELECT * FROM ecommerce.item WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $stmt->bindValue(':item_id', $_GET['item_id'], PDO::PARAM_STR);
+    //$stmt->bindValue(':item_id', $_GET['item_id'], PDO::PARAM_STR);
   }
   $stmt->execute();
   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
-  $sql = 'SELECT * FROM ecommerce.review WHERE item_id = :item_id';
+  $sql = 'SELECT * FROM ecommerce.review WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
   $stmt->execute();
   $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
