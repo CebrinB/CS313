@@ -29,9 +29,9 @@
           <form method="POST">
             <ul class="nav nav-pills nav-stacked text-dark">
               <li><a href="shop.php" type="button">All</li>
-              <li><input type="submit" name="filter" value="Saddle"></li>
-              <li><input type="submit" name="filter" value="Bridle"></li>
-              <li><input type="submit" name="filter" value="Blanket"></li>
+              <li><input type="submit" name="filter" value="Saddles"></li>
+              <li><input type="submit" name="filter" value="Bridles"></li>
+              <li><input type="submit" name="filter" value="Blankets"></li>
             </ul><br>
           </form>
         </div>
@@ -42,7 +42,7 @@
             $r = 0;
             $c = 1;
 
-            echo "<h1>Items</h1></br>";
+            print "<h1>Items</h1></br>";
             echo '<div class="row">';
             $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -62,7 +62,7 @@
                 echo
                 '<div class="col-sm-4">
                   <div class="card h-100">
-                    <img class="card-img-top" src="../images/' . $row['item_name'] . $row['item_id'] . '.jpg" width="100%" alt="">
+                    <img class="card-img-top" src="../images/' . $row['item_type'] . $row['item_id'] . '.jpg" width="100%" alt="">
                     <div class="card-body">  
                       <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>

@@ -24,6 +24,7 @@ item_id SERIAL NOT NULL PRIMARY KEY,
 item_name TEXT NOT NULL,
 item_price DECIMAL(8, 2) NOT NULL,
 item_description VARCHAR(255) NOT NULL,
+item_type VARCHAR(26) NOT NULL
 );
 
 //tables for customer reviews
