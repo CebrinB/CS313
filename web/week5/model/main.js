@@ -18,14 +18,17 @@ document.getElementById('ajax').addEventListener('click', (e) => {
 	e.preventDefault();
 
 	// construct FormData object and load it with the form data
-	var formData = new FormData(document.querySelector('form'));
+	//var formData = new FormData(document.querySelector('form'));
 	// value used in php
-	formData.append('using', 'ajax');
+	//formData.append('using', 'ajax');
+
+    var item_id = document.querySelector('#item_id').value;
+    console.log(item_id);
 
 	// sent data to the POST request
 	var request = new XMLHttpRequest();
-	request.open("POST", "shop_copy.php");
-	request.send(formData);
-    console.log(formData);
+	request.open("GET", "shop_copy.php");
+	request.send(item_id);
+    console.log(item_id);
 });
 
