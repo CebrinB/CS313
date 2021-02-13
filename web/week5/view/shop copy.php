@@ -93,7 +93,17 @@
             <h4 class="modal-title">Modal Header</h4>
           </div>
           <div class="modal-body" id="#showCal">
-            
+            <?php
+              $sql = "SELECT * FROM ecommerce.review WHERE item_id = '1'";
+              $stmt = $db->prepare($sql);
+              $stmt->execute();
+              $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+              $stmt->closeCursor();
+
+              foreach ($rows as $row) {
+                echo $row['title'];
+              }
+            ?>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
