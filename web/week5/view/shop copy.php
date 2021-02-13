@@ -94,7 +94,7 @@
           </div>
           <div class="modal-body" id="#showCal">
             <?php
-            
+              echo 'here';
               $sql = 'SELECT * FROM ecommerce.review WHERE item_id = 1';
               $stmt = $db->prepare($sql);
               $stmt->execute();
