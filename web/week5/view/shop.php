@@ -3,9 +3,7 @@
   session_start();
   
   include '../support/database.php';
-  if (isset($_SESSION['cart'])) {
-    echo $_SESSION['cart']->numItems;
-  } else echo 'no';
+ 
 
 
 
