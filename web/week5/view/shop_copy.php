@@ -69,7 +69,7 @@
                       <p class="card-text">' . $row['item_description'] .'</p>
                       <a href="#" class="btn btn-primary">Add to Cart</a>
                       <input class="d-none" name="item_id" id="item_id" value="'. $row['item_id'] . '"></div>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="ajax">Reviews</a>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Reviews</a>
                       </div>
                   </div>
                 </div>';
@@ -108,12 +108,10 @@
           </div>
           <div class="modal-body" id="#showCal">
             <?php
-            echo $sql;
-              if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                echo 'here';
-                $data['item_id'] = filter_input(INPUT_POST, 'item_id', FILTER_SANITIZE_STRING);
-                echo $data['item_id'];
-              }
+      
+                echo $_GET['item_id'];
+                
+              
               
             ?>
           </div>
