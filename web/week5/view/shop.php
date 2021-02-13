@@ -60,7 +60,7 @@
             //foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
                 echo
-                '<div class="card col-sm-4">
+                '<div class="card col-sm-4 h-100">
                   <img class="card-img-top" src="../images/' . $row['item_name'] . $row['item_id'] . '.jpg" width="100%" alt="">
                   <div class="card-body">  
                     <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
