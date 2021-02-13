@@ -1,6 +1,10 @@
 <?php
   // Start the session
   session_start();
+
+  if (!isset($_SESSION['cart'])) {
+    echo 'cart is not set.';
+  }
   
   include 'head.php';
 
