@@ -3,7 +3,13 @@
   session_start();
   
   include '../support/database.php';
-  echo ($_SESSION['cart']->numItems);
+  if (isset($_SESSION['cart'])) {
+    echo 'yes';
+  } else echo 'no';
+
+
+
+
   include 'head.php';
 
 ?>
