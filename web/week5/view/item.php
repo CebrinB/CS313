@@ -74,11 +74,11 @@
                             for ($i = 0; $i < $unstars; $i++) {                                
                               echo '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
                             }
-                    echo '</div>                          
+                    echo '<span><a href="#">Write a Review</a></div>                          
                           </div>
                           <div>'.$review['content'].'</div>
                           <div>'.$review['timestamp'].'</div>
-                          </div>';
+                          ';
                     $i++;
                   } 
                 } else die("No reviews for this item.");?>
