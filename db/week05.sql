@@ -14,3 +14,6 @@ INSERT INTO ecommerce.item (item_name, item_price, item_description, item_type)
          ('Blue Halter', 19.95, 'Bright blue nylon horse halter', 'other'),
          ('Cotton Lead Rope', 10.95, '12 foot long white cotton lead rope', 'other')
          ('Dressage Saddle', 749.95, 'Superior Quality black leather dressage saddle', 'Saddles');
+
+INSERT INTO ecommerce.review (user_id, rating, title, content, item_id)
+  VALUES (1, 5,'Love it!','Fits my horse perfectly.', 7);
