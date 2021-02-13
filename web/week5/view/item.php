@@ -38,7 +38,7 @@
           <?php foreach ($rows as $row) {
             echo $row['item_description'];
           } ?>
-          <a id="showform">Write a Review</a>
+          <a href="" id="showform">Write a Review</a>
           <form id="reviewForm" class="d-none">
             <button>Click me</button>
           </form>
