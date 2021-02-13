@@ -5,7 +5,7 @@
   if (!isset($_SESSION['cart'])) {  
     $_SESSION['cart'] = 0;
   } else $_SESSION['cart'] += 1;
-  
+
   include '../support/database.php';
  
 
@@ -20,9 +20,10 @@
   <body>
     <?php include 'navbar.php'; ?>
 
-    <!-- SideNav -->
+    <!-- Page Content -->
     <div class="container-fluid">
       <div class="row content">
+        <!-- SideNav -->
         <div class="col-sm-3 sidenav text-dark">
           <h4>Categories</h4>
           <form method="POST">
@@ -35,7 +36,7 @@
           </form>
         </div>
 
-        <!-- Page Content -->
+        <!-- Item cards -->
         <div class="col-sm-9">
           <?php 
             $r = 0;
