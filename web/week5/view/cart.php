@@ -1,6 +1,10 @@
 <?php
   // Start the session
   session_start();
+
+  if (!isset($_SESSION['cart'])) {  
+    $_SESSION['cart'] = 0;
+  } else $_SESSION['cart'] += 1;
   
   include 'head.php';
 

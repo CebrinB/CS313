@@ -60,7 +60,7 @@
                 echo
                 '<div class="col-sm-4 d-flex align-items-stretch">
                   <div class="card">
-                    <img class="card-img-top" src="../images/' . $row['item_type'] . $row['item_id'] . '.jpg" width="100%" alt="">
+                    <img class="card-img-top rounded" src="../images/' . $row['item_type'] . $row['item_id'] . '.jpg" width="100%" alt="">
                     <div class="card-body">  
                       <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>
