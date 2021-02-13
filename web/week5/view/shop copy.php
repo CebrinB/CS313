@@ -63,10 +63,10 @@
                     <div class="d-none">' . $row['item_id'] . '</div>
                     <img class="card-img-top" src="../images/' . $row['item_type'] . $row['item_id'] . '.jpg" width="100%" alt="">
                     <div class="card-body">  
-                      <h5 class="card-title"><span class="text-left">'. $row['item_name'] .'</span><span class="text-right">$'. $row['item_price'] .'</span></h5>
+                      <h5 class="card-title w-100"><span class="text-left">'. $row['item_name'] .'</span><span class="text-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>
                       <a href="#" class="btn btn-primary">Add to Cart</a>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="hi();">Reviews</a>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Reviews</a>
                     </div>
                   </div>
                 </div>';
