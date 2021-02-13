@@ -3,4 +3,4 @@
 3. item cards - photos same height
 4. fill in the footer/fix footer on Home page
 5. SHOP NOW buttons on Home page should all perform a sql query to filter results saddle/blanket/bridle
-6. store page - make item cards smaller.
+7. store page - prices to the right.
