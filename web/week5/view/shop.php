@@ -3,7 +3,7 @@
   session_start();
   
   include '../support/database.php';
-
+  echo ($_SESSION['cart']->numItems);
   include 'head.php';
 
 ?>
