@@ -13,3 +13,18 @@
    });
 });*/
 
+document.getElementById('ajax').addEventListener('click', (e) => {
+	// prevent default
+	//e.preventDefault();
+
+	// construct FormData object and load it with the form data
+	var formData = new FormData(document.querySelector('form'));
+	// value used in php
+	formData.append('using', 'ajax');
+
+	// sent data to the POST request
+	var request = new XMLHttpRequest();
+	request.open("POST", "index.php");
+	request.send(formData);
+});
+

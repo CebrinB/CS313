@@ -60,14 +60,16 @@
                 echo
                 '<div class="col-sm-4 d-flex align-items-stretch">
                   <div class="card">
-                    <div class="d-none">' . $row['item_id'] . '</div>
                     <img class="card-img-top" src="../images/' . $row['item_type'] . $row['item_id'] . '.jpg" width="100%" alt="">
                     <div class="card-body">  
                       <h5 class="card-title"><span class="float-left">'. $row['item_name'] .'</span><span class="float-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>
                       <a href="#" class="btn btn-primary">Add to Cart</a>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Reviews</a>
-                    </div>
+                      <form>
+                      <input type="text" class="d-none" name="item_id" value="'. $row['item_id'] . '"></div>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="ajax">Reviews</a>
+                      </form>
+                      </div>
                   </div>
                 </div>';
                 if ($c % 3 == 0) {
@@ -95,15 +97,11 @@
           <div class="modal-body" id="#showCal">
             <?php
               echo 'here';
-              $sql = 'SELECT * FROM ecommerce.review WHERE item_id = 1';
-              $stmt = $db->prepare($sql);
-              $stmt->execute();
-              $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-              $stmt->closeCursor();
-
-              foreach ($rows as $row) {
-                echo $row['title'];
+              if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                $data['item_id'] = filter_input(INPUT_POST, 'item_id', FILTER_SANITIZE_STRING);
+                echo $data['item_id'];
               }
+              
             ?>
           </div>
           <div class="modal-footer">
