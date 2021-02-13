@@ -39,10 +39,9 @@
         <!-- Item cards -->
         <div class="col-sm-9">
           <?php 
-            $r = 0;
             $c = 1;
 
-            print "<h1>Items</h1></br>";
+            echo "<h1>Items</h1></br>";
             echo '<div class="row">';
             $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -70,6 +69,10 @@
                     </div>
                   </div>
                 </div>';
+                if ($c % 3 == 0) {
+                  echo '</div><div class="row">'
+                }
+                $c++;
               }
             echo '</div>';  
           ?>
