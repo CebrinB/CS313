@@ -1,4 +1,5 @@
 1. style the SHOP NOW button on Home page
 2. style text as white
 3. item cards - photos same height
-4. fill in the footer
+4. fill in the footer/fix footer on Home page
+5. SHOP NOW buttons on Home page should all perform a sql query to filter results saddle/blanket/bridle
