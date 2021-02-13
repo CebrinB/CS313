@@ -64,13 +64,25 @@
                       echo '<div class="item active">';
                     } else echo '<div class="item">';
                     echo '<h2>'.$review['title'].'</h2>
-                          <div>'.$review['rating'].'</div>
+                          <div class="col-md-3">
+                            <span class="sr-only">'.$review['rating'].' out of Five Stars</span>';
+                            $stars = $review['rating'];
+                            for ($i = 0; $i < $stars; $i++) {
+                              echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>';
+                            }
+                            $unstars = (5 - $stars);
+                            for ($i = 0; $i < $unstars; $i++) {                                
+                              echo '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
+                            }
+                    echo '</div>                          
+                          </div>
                           <div>'.$review['content'].'</div>
                           <div>'.$review['timestamp'].'</div>
                           </div>';
+                    $i++;
                   } 
                 } else die("No reviews for this item.");?>
-                
+
             <!-- end wrapper for slides -->
             </div>
 
