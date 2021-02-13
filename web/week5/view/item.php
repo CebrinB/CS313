@@ -60,7 +60,7 @@
               <?php
                 $i = 0;
                 foreach ($reviews as $review) {
-                  if ($i == 0;) {
+                  if ($i == 0) {
                     echo '<div class="item active">';
                   } else echo '<div class="item">';
                   echo '<h2>'.$review['title'].'</h2>
