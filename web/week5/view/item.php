@@ -16,7 +16,7 @@
   $stmt->execute();
   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
-  $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE :item_id';
+  $sql = 'SELECT * FROM ecommerce.review WHERE item_id = :item_id';
   $stmt = $db->prepare($sql);
   $stmt->execute();
   $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
