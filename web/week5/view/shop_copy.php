@@ -7,7 +7,7 @@
   } else $_SESSION['cart'] += 1;
 
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    echo $data['item_id'];
+    echo $_GET['item_id'];
   }
   include '../support/database.php';
  
