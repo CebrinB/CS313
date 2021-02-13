@@ -62,6 +62,7 @@
                   foreach ($reviews as $review) {
                     if ($i == 0) {
                       echo '<div class="item active">';
+                      $i++;
                     } else echo '<div class="item">';
                     echo '<h2>'.$review['title'].'</h2>
                           <div class="col-md-3">
@@ -77,9 +78,7 @@
                     echo '<span><a href="#">Write a Review</a></div>                          
                           </div>
                           <div>'.$review['content'].'</div>
-                          <div>'.$review['timestamp'].'</div>
-                          ';
-                    $i++;
+                          <div>'.$review['timestamp'].'</div>';
                   } 
                 } else die("No reviews for this item.");?>
 
