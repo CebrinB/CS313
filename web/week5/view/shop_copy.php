@@ -67,6 +67,7 @@
                       <a href="#" class="btn btn-primary">Add to Cart</a>
                       <form>
                       <input type="text"  name="item_id" value="'. $row['item_id'] . '"></div>
+                      
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="ajax">Reviews</a>
                       </form>
                       </div>
@@ -85,8 +86,9 @@
     </div>
 
 <div>
+<a href="shop_copy.php?item_id=1">View review</a>
 <?php
-include 'item_reviews.php?item_id=1';
+echo $sql;
 ?>
 
 
