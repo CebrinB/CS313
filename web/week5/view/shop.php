@@ -4,7 +4,7 @@
   
   include '../support/database.php';
   if (isset($_SESSION['cart'])) {
-    echo 'yes';
+    echo $_SESSION['cart'];
   } else echo 'no';
 
 
