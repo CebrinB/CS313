@@ -99,13 +99,14 @@
           <div class="modal-body" id="#showCal">
             <?php
               $sql = '';
-              if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+              //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE :filter';
-              } else $sql = 'SELECT * FROM ecommerce.item';
+              //} else $sql = 'SELECT * FROM ecommerce.item';
               $stmt = $db->prepare($sql);
-              if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-              $stmt->bindValue(':filter', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
-              }
+              //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+              //$stmt->bindValue(':filter', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
+              //}
+              $stmt->bindValue(':filter', '1', PDO::PARAM_STR);
               $stmt->execute();
               $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
               $stmt->closeCursor();
