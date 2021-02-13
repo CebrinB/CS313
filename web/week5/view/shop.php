@@ -64,8 +64,8 @@
                     <div class="card-body">  
                       <h5 class="card-title">'. $row['item_name'] .'<span class="text-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                      <a href="#" class="btn btn-primary">Reviews</a>
+                      <a href="item.php?item_id='.$row['item_id'].'" class="btn btn-primary">View</a>
+                      
                     </div>
                   </div>
                 </div>';
