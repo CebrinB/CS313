@@ -6,6 +6,7 @@ document.querySelector('#showform').addEventListener('click', () => {
     e = document.querySelector('#reviewForm');
     if (e.style.display === "none") {
         e.classList.remove("d-none");
+        e.style.display = "block";
     } else e.classList.add("d-none");
 });
 
