@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
-            <img class="card-img-top img-circle item" src="../images/saddle2.jpg" width="100%" alt="Black dressage saddle">
+            <img class="card-img-top img-circle img-home" src="../images/saddle2.jpg" alt="Black dressage saddle">
             <div class="card-body">
               <h5 class="card-title">Saddles</h5>
               <p class="card-text">Shop our Dressage saddles</p>
@@ -34,19 +34,19 @@
         </div>
         <div class="col-sm-4"> 
           <div class="card">
-            <img class="card-img-top img-circle item" src="../images/Bridle5.jpg" width="100%" alt="Chestnut horse with bridle">
+            <img class="card-img-top img-circle img-home" src="../images/Bridle5.jpg" alt="Chestnut horse with bridle">
             <div class="card-body">
               <h5 class="card-title">Bridles</h5>
-              <p class="card-text">Shop our Dressage Bridles</p>
+              <p class="card-text">Shop our Dressage bridles</p>
               <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
             </div>  
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
-          <img class="card-img-top img-circle item" src="../images/Blanket6.jpg" alt="Bay horse with blue blanket">
+          <img class="card-img-top img-circle img-home" src="../images/Blanket6.jpg" alt="Bay horse with blue blanket">
             <div class="card-body">
-              <h5 class="card-title">Bridles</h5>
+              <h5 class="card-title">Blankets</h5>
               <p class="card-text">Shop our Winter Blankets</p>
               <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
             </div>  
