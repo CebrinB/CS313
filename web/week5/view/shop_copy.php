@@ -88,7 +88,7 @@
 <div>
 <a href="shop_copy.php?item_id=1">View review</a>
 <?php
-echo $sql;
+
 ?>
 
 
@@ -108,6 +108,7 @@ echo $sql;
           </div>
           <div class="modal-body" id="#showCal">
             <?php
+            echo $sql;
               if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo 'here';
                 $data['item_id'] = filter_input(INPUT_POST, 'item_id', FILTER_SANITIZE_STRING);
