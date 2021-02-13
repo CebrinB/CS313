@@ -68,7 +68,7 @@
                       <h5 class="card-title"><span class="float-left">'. $row['item_name'] .'</span><span class="float-right">$'. $row['item_price'] .'</span></h5>
                       <p class="card-text">' . $row['item_description'] .'</p>
                       <a href="#" class="btn btn-primary">Add to Cart</a>
-                      <input class="d-none" name="item_id" id="item_id" value="'. $row['item_id'] . '"></div>
+                      <input class="d-none" name="item_id" id="item_id" value="'. $row['item_id'] . '">
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Reviews</a>
                       </div>
                   </div>
