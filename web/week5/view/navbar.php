@@ -17,7 +17,7 @@
         <li><a href="contact.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart: <?php echo $_SESSION['cart'] ?></a></li>
       </ul>
     </div>
   </div>
