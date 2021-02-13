@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
-            <img class="card-img-top" src="../images/saddle2.jpg" width="100%" alt="Black dressage saddle">
+            <img class="card-img-top img-circle tem" src="../images/saddle2.jpg" width="100%" alt="Black dressage saddle">
             <div class="card-body">
               <h5 class="card-title">Saddles</h5>
               <p class="card-text">Shop our Dressage saddles</p>
