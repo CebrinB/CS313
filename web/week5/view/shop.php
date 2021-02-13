@@ -70,7 +70,7 @@
                   </div>
                 </div>';
                 if ($c % 3 == 0) {
-                  echo '</div><div class="row">'
+                  echo '</div><div class="row">';
                 }
                 $c++;
               }
