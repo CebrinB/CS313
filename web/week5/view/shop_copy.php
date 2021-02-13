@@ -85,17 +85,7 @@
       </div>
     </div>
 
-<div>
-<a href="shop_copy.php?item_id=1">View review</a>
-<?php
 
-?>
-
-
-
-
-
-</div>
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -108,8 +98,22 @@
           </div>
           <div class="modal-body" id="#showCal">
             <?php
-      
-                echo $_GET['item_id'];
+              $sql = '';
+              if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+                $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE :filter';
+              } else $sql = 'SELECT * FROM ecommerce.item';
+              $stmt = $db->prepare($sql);
+              if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+              $stmt->bindValue(':filter', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
+              }
+              $stmt->execute();
+              $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
+              $stmt->closeCursor();
+
+              foreach ($reviews as $review)
+                {
+                  echo $review['title'];
+                }
                 
               
               
