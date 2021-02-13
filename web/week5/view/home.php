@@ -2,9 +2,16 @@
   // Start the session
   session_start();
 
+  require_once '../model/classCart.php';
+
   if (!isset($_SESSION['cart'])) {
-    echo 'cart is not set.';
+    $cart = new Cart();
+    $_SESSION['cart'] = $cart; 
   }
+
+  $_SESSION['cart']->numItems = 7;
+    echo ($_SESSION['cart']->numItems);
+
   
   include 'head.php';
 
