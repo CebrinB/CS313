@@ -1,7 +1,7 @@
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   $('#myModal').on('shown.bs.modal', function () {
       $.ajax({
           type: 'GET',
@@ -11,5 +11,5 @@ $(document).ready(function(){
           }
       });
    });
-});
+});*/
 

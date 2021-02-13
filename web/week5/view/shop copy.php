@@ -94,7 +94,8 @@
           </div>
           <div class="modal-body" id="#showCal">
             <?php
-              $sql = "SELECT * FROM ecommerce.review WHERE item_id = '1'";
+            
+              $sql = 'SELECT * FROM ecommerce.review WHERE item_id = 1';
               $stmt = $db->prepare($sql);
               $stmt->execute();
               $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
