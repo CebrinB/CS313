@@ -9,17 +9,17 @@ echo 'it worked';
 $item_id = htmlspecialchars($_GET['item_id']);
 
 $sql = '';
-            if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            if (isset($_GET['item_id'])) {
               $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE :filter';
             } else die("No reviews.");
             $stmt = $db->prepare($sql);
             $stmt->bindValue(':filter', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
             $stmt->execute();
-            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $stmt->closeCursor();
 
-            foreach ($rows as $row) {
-              echo $row['title'];
+            foreach ($reviews as $review) {
+              echo $review['title'];
             }
 
 ?>

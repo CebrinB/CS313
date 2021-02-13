@@ -84,6 +84,16 @@
       </div>
     </div>
 
+<div>
+<?php
+include 'item_reviews.php?item_id=1';
+?>
+
+
+
+
+
+</div>
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
