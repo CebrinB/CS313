@@ -16,4 +16,7 @@ INSERT INTO ecommerce.item (item_name, item_price, item_description, item_type)
          ('Dressage Saddle', 749.95, 'Superior Quality black leather dressage saddle', 'Saddles');
 
 INSERT INTO ecommerce.review (user_id, rating, title, content, item_id)
-  VALUES (1, 5,'Love it!','Fits my horse perfectly.', 7);
+  VALUES (1, 5,'Love it!','Fits my horse perfectly.', 7),
+         (1, 1, 'Too big for my pony', 'The description does 
+         not specify sizing for this halter. It did not fit 
+         my pony at all.', 7);

@@ -12,9 +12,6 @@
  
   $sql = 'SELECT * FROM ecommerce.item WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
-  if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    //$stmt->bindValue(':item_id', $_GET['item_id'], PDO::PARAM_STR);
-  }
   $stmt->execute();
   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
@@ -61,32 +58,19 @@
             <div class="carousel-inner" role="listbox">
               <?php
                 $i = 0;
-                foreach ($reviews as $review) {
-                  if ($i == 0) {
-                    echo '<div class="item active">';
-                  } else echo '<div class="item">';
-                  echo '<h2>'.$review['title'].'</h2>
-                        <div>'.$review['rating'].'</div>
-                        <div>'.$review['content'].'</div>
-                        <div>'.$review['timestamp'].'</div>
-                        </div>';
-                } ?>
-            
-              <div class="item active">
-                <img src="https://placehold.it/800x400?text=IMAGE" alt="Image">
-                <div class="carousel-caption">
-                  <h3>Sell $</h3>
-                  <p>Money Money.</p>
-                </div>      
-              </div>
-
-              <div class="item">
-                <img src="https://placehold.it/800x400?text=Another Image Maybe" alt="Image">
-                <div class="carousel-caption">
-                  <h3>More Sell $</h3>
-                  <p>Lorem ipsum...</p>
-                </div>      
-              </div>
+                if (sizeof($reviews) > 0) {
+                  foreach ($reviews as $review) {
+                    if ($i == 0) {
+                      echo '<div class="item active">';
+                    } else echo '<div class="item">';
+                    echo '<h2>'.$review['title'].'</h2>
+                          <div>'.$review['rating'].'</div>
+                          <div>'.$review['content'].'</div>
+                          <div>'.$review['timestamp'].'</div>
+                          </div>';
+                  } 
+                } else die("No reviews for this item.");?>
+                
             <!-- end wrapper for slides -->
             </div>
 

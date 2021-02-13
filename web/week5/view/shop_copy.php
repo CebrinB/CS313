@@ -84,47 +84,6 @@
         </div>
       </div>
     </div>
-
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body" id="#showCal">
-            <?php
-              $sql = '';
-              //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-                $sql = 'SELECT * FROM ecommerce.review WHERE item_id LIKE 1';
-              //} else $sql = 'SELECT * FROM ecommerce.item';
-              $stmt = $db->prepare($sql);
-              //if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-              //$stmt->bindValue(':filter', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
-              //}
-              $stmt->bindValue(':filter', '1', PDO::PARAM_STR);
-              $stmt->execute();
-              $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
-              $stmt->closeCursor();
-
-              foreach ($reviews as $review)
-                {
-                  echo $review['title'];
-                }
-                
-              
-              
-            ?>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
       </div>
     </div>
 
