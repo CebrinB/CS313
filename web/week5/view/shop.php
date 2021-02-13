@@ -56,7 +56,6 @@
             $stmt->closeCursor();
 
             foreach ($rows as $row)
-            //foreach ($db->query('SELECT item_id, item_name, item_price, item_description FROM ecommerce.item ORDER BY item_name') as $row)
               {
                 echo
                 '<div class="col-sm-4 d-flex align-items-stretch">
