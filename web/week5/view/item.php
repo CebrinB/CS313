@@ -38,6 +38,10 @@
           <?php foreach ($rows as $row) {
             echo $row['item_description'];
           } ?>
+          <a id="showform">Write a Review</a>
+          <form id="reviewForm" class="d-none">
+            <button>Click me</button>
+          </form>
           Item info goes here
         </div>
         <div class="col-sm-8">
@@ -75,7 +79,7 @@
                             for ($i = 0; $i < $unstars; $i++) {                                
                               echo '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
                             }
-                    echo '<span><a href="#">Write a Review</a></div>                          
+                    echo '</div>                          
                           </div>
                           <div>'.$review['content'].'</div>
                           <div>'.$review['timestamp'].'</div>';

@@ -1,5 +1,13 @@
+function toggleVisibility() {
 
+}
 
+document.querySelector('#showform').addEventListener('click', () => {
+    e = document.querySelector('#reviewForm');
+    if (e.style.display === "none") {
+        e.classList.remove("d-none");
+    } else e.classList.add("d-none");
+});
 
 /*$(document).ready(function(){
   $('#myModal').on('shown.bs.modal', function () {
