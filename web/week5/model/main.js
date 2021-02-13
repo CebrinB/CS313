@@ -26,5 +26,6 @@ document.getElementById('ajax').addEventListener('click', (e) => {
 	var request = new XMLHttpRequest();
 	request.open("POST", "shop_copy.php");
 	request.send(formData);
+    console.log(formData);
 });
 
