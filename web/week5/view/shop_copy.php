@@ -66,7 +66,7 @@
                       <p class="card-text">' . $row['item_description'] .'</p>
                       <a href="#" class="btn btn-primary">Add to Cart</a>
                       <form>
-                      <input type="text" class="d-none" name="item_id" value="'. $row['item_id'] . '"></div>
+                      <input type="text"  name="item_id" value="'. $row['item_id'] . '"></div>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="ajax">Reviews</a>
                       </form>
                       </div>
