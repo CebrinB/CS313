@@ -11,7 +11,7 @@
   $sql = 'SELECT * FROM ecommerce.item WHERE item_id = :item_id';
   $stmt = $db->prepare($sql);
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $stmt->bindValue(':item_id', '%'.$_GET['item_id'].'%', PDO::PARAM_STR);
+    $stmt->bindValue(':item_id', $_GET['item_id'], PDO::PARAM_STR);
   }
   $stmt->execute();
   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
