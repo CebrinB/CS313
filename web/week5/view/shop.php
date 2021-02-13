@@ -2,6 +2,10 @@
   // Start the session
   session_start();
   
+  if (!isset($_SESSION['cart'])) {  
+    $_SESSION['cart'] = 0;
+  } else $_SESSION['cart'] += 1;
+  
   include '../support/database.php';
  
 
@@ -16,7 +20,7 @@
   <body>
     <?php include 'navbar.php'; ?>
 
-    <!-- Page Content -->
+    <!-- SideNav -->
     <div class="container-fluid">
       <div class="row content">
         <div class="col-sm-3 sidenav text-dark">
@@ -24,12 +28,14 @@
           <form method="POST">
             <ul class="nav nav-pills nav-stacked text-dark">
               <li><a href="shop.php" type="button">All</li>
-              <li><input type="submit" name="filter" value="Saddle">Saddles</li>
-              <li><input type="submit" name="filter" value="Bridle">Bridles</li>
-              <li><input type="submit" name="filter" value="Blanket">Blankets</li>
+              <li><input type="submit" name="filter" value="Saddle"></li>
+              <li><input type="submit" name="filter" value="Bridle"></li>
+              <li><input type="submit" name="filter" value="Blanket"></li>
             </ul><br>
           </form>
         </div>
+
+        <!-- Page Content -->
         <div class="col-sm-9">
           <?php 
             $r = 0;
