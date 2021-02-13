@@ -45,7 +45,7 @@
             echo '<div class="row">';
             $sql = '';
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-              $sql = 'SELECT * FROM ecommerce.item WHERE item_name LIKE :filter';
+              $sql = 'SELECT * FROM ecommerce.item WHERE item_type LIKE :filter';
             } else $sql = 'SELECT * FROM ecommerce.item';
             $stmt = $db->prepare($sql);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
