@@ -15,7 +15,7 @@
 
 document.getElementById('ajax').addEventListener('click', (e) => {
 	// prevent default
-	//e.preventDefault();
+	e.preventDefault();
 
 	// construct FormData object and load it with the form data
 	var formData = new FormData(document.querySelector('form'));
@@ -24,7 +24,7 @@ document.getElementById('ajax').addEventListener('click', (e) => {
 
 	// sent data to the POST request
 	var request = new XMLHttpRequest();
-	request.open("POST", "index.php");
+	request.open("POST", "shop_copy.php");
 	request.send(formData);
 });
 
