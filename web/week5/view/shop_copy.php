@@ -96,8 +96,8 @@
           </div>
           <div class="modal-body" id="#showCal">
             <?php
-              echo 'here';
               if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                echo 'here';
                 $data['item_id'] = filter_input(INPUT_POST, 'item_id', FILTER_SANITIZE_STRING);
                 echo $data['item_id'];
               }
