@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $item_id = htmlspecialchars($_POST['item_id']);
 }
 
-$sql = 'SELECT * FROM ecommerce.user WHERE user_name = '.$user_name;
+$sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
