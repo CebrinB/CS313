@@ -53,7 +53,6 @@
             <input display="hidden" type="number" value="<?php echo $rows[0]['item_id'];?>">
             <input type="submit" value="Save Review">
           </form>
-          
         </div>
         <div class="col-sm-8">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -112,7 +111,7 @@
         </div>
       </div>
       <hr>
-      </div>
+      
 
 
     <?php include 'footer.php'; ?>
