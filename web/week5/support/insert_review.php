@@ -1,6 +1,6 @@
 <?php
 
-start_session();
+session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $user_name = htmlspecialchars($_POST['user_name']);
