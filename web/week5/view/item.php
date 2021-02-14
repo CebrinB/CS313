@@ -36,13 +36,24 @@
       <div class="row">
         <div class="col-sm-4">
           <?php foreach ($rows as $row) {
-            echo $row['item_description'];
+            echo '<h3>'.$row['item_name'].'</h3>';
           } ?>
-          <a href="" id="showform">Write a Review</a>
-          <form id="reviewForm" class="d-none">
-            <button>Click me</button>
+          <div><h3><a href="" id="showform">Write a Review</a></h3></div>
+          <form id="reviewForm" method ="POST">
+            <input type="text" name="user_id" placeholder="Username">
+            <div class="stars">
+              <input type="radio" name="rating" value="1"> 
+              <input type="radio" name="rating" value="2"> 
+              <input type="radio" name="rating" value="3"> 
+              <input type="radio" name="rating" value="4"> 
+              <input type="radio" name="rating" value="5">
+            </div>
+            <input type="text" name="title" placeholder="Title for your Review">
+            <input type="text" name="content" placeholder="Tell us what you think of our product!">
+            <input display="hidden" type="number" value="<?php echo $rows[0]['item_id'];?>">
+            <input type="submit" value="Save Review">
           </form>
-          Item info goes here
+          
         </div>
         <div class="col-sm-8">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -80,7 +91,6 @@
                               echo '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
                             }
                     echo '</div>                          
-                          </div>
                           <div>'.$review['content'].'</div>
                           <div>'.$review['timestamp'].'</div>';
                   } 
