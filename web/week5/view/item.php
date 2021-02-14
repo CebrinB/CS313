@@ -38,19 +38,21 @@
           <?php foreach ($rows as $row) {
             echo '<h3>'.$row['item_name'].'</h3>';
           } ?>
-          <div><h3><a href="" id="showform">Write a Review</a></h3></div>
-          <form id="reviewForm" method ="POST">
-            <input type="text" name="user_id" placeholder="Username">
+          <div><h4><a href="" id="showform">Write a Review</a></h4></div>
+          <form id="reviewForm" method ="POST" action="../support/insert_review.php">
+            <input type="text" name="user_name" placeholder="Username">
             <div class="stars">
-              <input type="radio" name="rating" value="1"> 
-              <input type="radio" name="rating" value="2"> 
-              <input type="radio" name="rating" value="3"> 
-              <input type="radio" name="rating" value="4"> 
-              <input type="radio" name="rating" value="5">
+              <label> Rating 1 - 5:
+                <input type="radio" name="rating" value="1"> 
+                <input type="radio" name="rating" value="2"> 
+                <input type="radio" name="rating" value="3"> 
+                <input type="radio" name="rating" value="4"> 
+                <input type="radio" name="rating" value="5">
+              </label>
             </div>
             <input type="text" name="title" placeholder="Title for your Review">
-            <input type="text" name="content" placeholder="Tell us what you think of our product!">
-            <input class="d-none" type="number" value="<?php echo $rows[0]['item_id'];?>">
+            <textarea name="content" placeholder="Tell us what you think of our product!">
+            <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
             <input type="submit" value="Save Review">
           </form>
         </div>
