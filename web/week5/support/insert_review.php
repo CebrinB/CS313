@@ -19,9 +19,22 @@ $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+$sql = "INSERT INTO ecommerce.review (user_id, rating, title, content, item_id) VALUES
+        (:user_id, :rating, :title, :content, :item_id);";
+$stmt = $db->prepare($sql);
+$stmt->bindValue(':user_id', $user['user_id'], PDO::PARAM_INT);
+$stmt->bindValue(':rating', $rating, PDO::PARAM_INT);
+$stmt->bindValue(':title', $title, PDO::PARAM_STR);
+$stmt->bindValue(':content', $content, PDO::PARAM_STR);
+$stmt->bindValue(':item_id', $item_id, PDO::PARAM_INT);
+$stmt->execute();
+
 $stmt->closeCursor();
 
-echo $user['user_id'];
+$new_page = "item.php?item_id=$item_id";
+
+header("Location: $new_page");
+die();
 
 
 ?>
