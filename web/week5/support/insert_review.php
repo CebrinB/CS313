@@ -2,7 +2,7 @@
 
 start_session();
 
-if ($_SERVER_RESPONSE_METHOD == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $user_name = htmlspecialchars($_POST['user_name']);
   $rating = htmlspecialchars($_POST['rating']);
   $title = htmlspecialchars($_POST['title']);
