@@ -50,7 +50,7 @@
             </div>
             <input type="text" name="title" placeholder="Title for your Review">
             <input type="text" name="content" placeholder="Tell us what you think of our product!">
-            <input display="hidden" type="number" value="<?php echo $rows[0]['item_id'];?>">
+            <input class="d-none" type="number" value="<?php echo $rows[0]['item_id'];?>">
             <input type="submit" value="Save Review">
           </form>
         </div>
