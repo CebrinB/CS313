@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $item_id = htmlspecialchars($_POST['item_id']);
 }
 
-echo (int)$item_id;
+$int = (int)$item_id;
+echo $int;
 
 // $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
 // $stmt = $db->prepare($sql);
