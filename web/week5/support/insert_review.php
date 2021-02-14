@@ -31,7 +31,7 @@ $stmt->execute();
 
 $stmt->closeCursor();
 
-$new_page = "item.php?item_id=$item_id";
+$new_page = "../view/item.php?item_id=$item_id";
 
 header("Location: $new_page");
 die();
