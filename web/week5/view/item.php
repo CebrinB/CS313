@@ -51,7 +51,7 @@
               </label>
             </div>
             <input type="text" name="title" placeholder="Title for your Review">
-            <textarea name="content" placeholder="Tell us what you think of our product!">
+            <textarea name="content" placeholder="Tell us what you think of our product!"></textarea>
             <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
             <input type="submit" value="Save Review">
           </form>
