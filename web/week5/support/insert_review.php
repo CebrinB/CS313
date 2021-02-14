@@ -11,9 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $rating = htmlspecialchars($_POST['rating']);
   $title = htmlspecialchars($_POST['title']);
   $content = htmlspecialchars($_POST['content']);
-  $item_id = intval(htmlspecialchars($_POST['item_id']));
+  $item_id = htmlspecialchars($_POST['item_id']);
 }
-echo $_POST['item_id'];
+
 echo $item_id;
 
 // $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
