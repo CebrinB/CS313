@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $content = htmlspecialchars($_POST['content']);
   $item_id = intval(htmlspecialchars($_POST['item_id']));
 }
-
+echo $_POST['item_id'];
 echo $item_id;
 
 // $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
