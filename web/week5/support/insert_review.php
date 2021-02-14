@@ -13,6 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $content = htmlspecialchars($_POST['content']);
   $item_idSTR = htmlspecialchars($_POST['item_id']);
 }
+
+json_encode($item_idSTR, JSON_NUMERIC_CHECK)
 echo $item_idSTR;
 $item_id = $item_idSTR + 0;
 echo $item_id;
