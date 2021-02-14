@@ -26,7 +26,7 @@ $stmt->bindValue(':user_id', $user['user_id'], PDO::PARAM_INT);
 $stmt->bindValue(':rating', $rating, PDO::PARAM_INT);
 $stmt->bindValue(':title', $title, PDO::PARAM_STR);
 $stmt->bindValue(':content', $content, PDO::PARAM_STR);
-$stmt->$db->setAttribute( PDO::ATTR_EMULATE_PREPARES, false);
+$db->setAttribute( PDO::ATTR_EMULATE_PREPARES, false);
 $stmt->bindValue(':item_id', $item_id);
 $stmt->execute();
 
