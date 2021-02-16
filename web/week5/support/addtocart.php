@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $sql = "INSERT INTO ecommerce.cart (user_id, item_id, quantity) VALUES
         (:user_id, :item_id, :quantity);";
 $stmt = $db->prepare($sql);
-$stmt->bindValue(':user_id', $item_id, PDO::PARAM_INT);
+$stmt->bindValue(':user_id', $user_id, PDO::PARAM_INT);
 $stmt->bindValue(':item_id', $item_id, PDO::PARAM_INT);
 $stmt->bindValue(':quantity', $quantity, PDO::PARAM_INT);
 $stmt->execute();
