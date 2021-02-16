@@ -1,4 +1,4 @@
-
+console.log("here!");
 
 function addToCart(item_id) {
     user_id = 1;
