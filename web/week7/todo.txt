@@ -6,3 +6,4 @@
 8. fix favicon path
 9. on item page, change $rows to $row since we only expect 1 item to be returned.
 10. on item page, change sql query to JOIN user and reviw tables to get username.
+11. need to set username and password in localstorage/have them sign in.

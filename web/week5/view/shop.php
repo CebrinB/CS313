@@ -67,11 +67,12 @@
                       <a href="item.php?item_id=\''.$row['item_id'].'\'" class="btn btn-primary">View</a>
                       
                     </div>
+                    <form>
                     <div class="input-group mb-3">
-                      <input type="number" class="form-control" placeholder="Qty" aria-label="Quantity" aria-describedby="basic-addon2">
+                      <input type="number" class="form-control" id="quantity'.$row['item_id'].'" placeholder="Qty" aria-label="Quantity" aria-describedby="basic-addon2">
                       
-                        <button class="btn btn-outline-secondary" type="button">Add to Cart</button>
-                      
+                        <button class="btn btn-outline-secondary" type="button" onclick="addToCart('.$row['item_id'].')">Add to Cart</button>
+                      </form>
                     </div>
                   </div>
                 </div>';
@@ -92,5 +93,6 @@
  
 
     <?php include 'footer.php'; ?>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
