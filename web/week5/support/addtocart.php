@@ -1,7 +1,7 @@
 <?php
 
 
-start_session();
+session_start();
 
 require_once 'database.php';
 
