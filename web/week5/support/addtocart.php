@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $quantity = filter_input(INPUT_POST, 'quantity', FILTER_SANITIZE_NUMBER_INT);
 }
 
-$sql = "INSERT INTO ecommerce.cart (item_id, quantity) VALUES
+$sql = "INSERT INTO ecommerce.cart (user_id, item_id, quantity) VALUES
         (:user_id, :item_id, :quantity);";
 $stmt = $db->prepare($sql);
 $stmt->bindValue(':user_id', $item_id, PDO::PARAM_INT);
