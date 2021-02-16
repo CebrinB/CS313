@@ -53,4 +53,11 @@ CREATE TABLE ecommerce.test (
  name VARCHAR(26) NOT NULL
  );
 
+//table for cart items
+CREATE TABLE ecommerce.cart (
+  user_id INT NOT NULL REFERENCES ecommerce.user(user_id),
+  item_id INT NOT NULL REFERENCES ecommerce.item(item_id),
+  quantity INT NOT NULL
+);
+
 

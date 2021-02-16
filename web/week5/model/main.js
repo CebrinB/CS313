@@ -23,6 +23,8 @@ function addToCart(item_id) {
    });
 }
 
+
+
 // document.getElementById('ajax').addEventListener('click', (e) => {
 // 	// prevent default
 // 	e.preventDefault();
