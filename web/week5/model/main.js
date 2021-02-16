@@ -4,8 +4,9 @@ console.log("here!");
 function addToCart(item_id) {
     user_id = 1;
 
-    selector = "quantity" + item_id;
+    selector = "#quantity" + item_id;
     console.log(selector);
+    
     quantity = document.querySelector(selector).value;
     data = {};
     data["user_id"] = user_id;
