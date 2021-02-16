@@ -15,7 +15,7 @@ function addToCart(item_id) {
     console.log(data['item_id']);
     $.ajax({
           type: 'POST',
-          url: "addtocart.php",
+          url: "../support/addtocart.php",
           data: data,  
           success:function(data) {
               console.log("Ajax successful!");
