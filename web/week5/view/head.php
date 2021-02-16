@@ -12,4 +12,5 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="../css/ecommercestyles.css">
+    <script src="../model/main.js" type="module"></script>
   </head>

@@ -93,6 +93,6 @@
  
 
     <?php include 'footer.php'; ?>
-    <script src="../model/main.js" type="module"></script>
+    
   </body>
 </html>
