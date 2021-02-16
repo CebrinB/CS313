@@ -69,9 +69,9 @@
                     </div>
                     <div class="input-group mb-3">
                       <input type="number" class="form-control" placeholder="Qty" aria-label="Quantity" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
+                      
                         <button class="btn btn-outline-secondary" type="button">Add to Cart</button>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>';
