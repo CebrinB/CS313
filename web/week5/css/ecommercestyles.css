@@ -31,6 +31,9 @@ h3 {
 
 
 button {
+  background: none!important;
+  border: none;
+  text-decoration: none;
   padding: 0px;
 }
 
