@@ -30,8 +30,8 @@
             <ul class="nav nav-pills nav-stacked text-dark">
               <li><a href="shop.php" type="button">All</a></li>
               <li><a type="button"><input type="submit" name="filter" value="Saddles"></a></li>
-              <li><input type="submit" name="filter" value="Bridles"></li>
-              <li><input type="submit" name="filter" value="Blankets"></li>
+              <li><a type="button"><input type="submit" name="filter" value="Bridles"></a></li>
+              <li><a type="button"><input type="submit" name="filter" value="Blankets"></a></li>
             </ul><br>
           </form>
         </div>
