@@ -30,11 +30,12 @@ h3 {
 }
 
 
-.button {
+input {
   background: none!important;
   border: none;
   text-decoration: none;
   padding: 0px;
+  background-color: none !important;
 }
 
 .card {
