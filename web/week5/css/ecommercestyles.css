@@ -30,7 +30,7 @@ h3 {
 }
 
 
-button {
+.button {
   background: none!important;
   border: none;
   text-decoration: none;
