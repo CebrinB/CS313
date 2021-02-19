@@ -7,17 +7,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php"><h3>Billings Saddlery</h3></a>
+      <a class="navbar-brand white" href="home.php"><h3>Billings Saddlery</h3></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="shop.php">Shop</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li class="active white"><a href="home.php">Home</a></li>
+        <li><a class="white" href="about.php">About</a></li>
+        <li><a class="white" href="shop.php">Shop</a></li>
+        <li><a class="white" href="contact.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart: <?php echo $_SESSION['cart'] ?></a></li>
+        <li><a class="white" href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart: <?php echo $_SESSION['cart'] ?></a></li>
       </ul>
     </div>
   </div>
