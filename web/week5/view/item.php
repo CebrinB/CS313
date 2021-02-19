@@ -13,7 +13,7 @@
   $sql = 'SELECT * FROM ecommerce.item WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
   $stmt->execute();
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  $row = $stmt->fetch(PDO::FETCH_ASSOC);
   
   $sql = 'SELECT * FROM ecommerce.review WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
@@ -35,7 +35,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <?php foreach ($rows as $row) {
+          <?php 
             echo '<h3>'.$row['item_name'].'</h3>';
           } ?>
           <div><h4><a href="" id="showform">Write a Review</a></h4></div>

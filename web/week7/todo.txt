@@ -1,7 +1,7 @@
 
-2. style text as white
+
 4. fill in the footer/fix footer on Home page
-5. SHOP NOW buttons on Home page should all perform a sql query to filter results saddle/blanket/bridle
+
 7. store page - prices to the right.
 8. fix favicon path
 9. on item page, change $rows to $row since we only expect 1 item to be returned.
