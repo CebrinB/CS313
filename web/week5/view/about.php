@@ -10,7 +10,7 @@
     <?php include 'navbar.php'; ?>
 
     <!-- Page Content -->
-    <div class="container text-center">
+    <div class="container text-center about">
       <div class="col-sm-2"></div>
       <div class="col-lg-8">
         <div>At Billings Saddlery we strive to create a streamlined online shopping experience that provides

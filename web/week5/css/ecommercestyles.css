@@ -68,6 +68,11 @@ input {
   text-align: right;
 }
 
+.about {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 footer {
   width: 100%;
   
