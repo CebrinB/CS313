@@ -1,6 +1,3 @@
-console.log("here!");
-
-
 function addToCart(item_id) {
     user_id = 1;
 
@@ -21,6 +18,8 @@ function addToCart(item_id) {
               console.log("Ajax successful!");
           }
    });
+
+   selector.value = '';
 }
 
 

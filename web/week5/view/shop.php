@@ -46,7 +46,6 @@
             $stmt = $db->prepare($sql);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
-            echo $_POST['filter'];
             }
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
