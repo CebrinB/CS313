@@ -2,14 +2,12 @@ function addToCart(item_id) {
     user_id = 1;
 
     selector = "#quantity" + item_id;
-    console.log(selector);
     
     quantity = document.querySelector(selector).value;
     data = {};
     data["user_id"] = user_id;
     data["item_id"] = item_id;
     data["quantity"] = quantity;
-    console.log(data['item_id']);
     $.ajax({
           type: 'POST',
           url: "../support/addtocart.php",
@@ -19,7 +17,7 @@ function addToCart(item_id) {
           }
    });
 
-   quantity = '';
+   console.log(quantity)
 }
 
 
