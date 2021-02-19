@@ -72,12 +72,15 @@ footer {
   background-color: #7d5839;
 }
 
-.img-credit, .img-credit > * {
+.img-credit {
   background-color: #7d5839;
   color: white;
-  text-decoration: none;
   padding: 1.2em 1.2em;
   
+}
+
+.quiet-link {
+  text-decoration: none;
 }
 
 /*item page styles*/
