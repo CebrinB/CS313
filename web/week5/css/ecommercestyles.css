@@ -69,6 +69,7 @@ input {
 }
 
 footer {
+  width: 100%;
   position: absolute; 
   bottom: 0;
   padding-top: 1.5em;
