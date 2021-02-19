@@ -17,6 +17,7 @@ function addToCart(item_id) {
           }
    });
 
+   document.querySelector(selector).value = '';
    console.log(quantity)
 }
 
