@@ -72,9 +72,10 @@ footer {
   background-color: #7d5839;
 }
 
-.brand {
-  padding:0.3em 1.2em;
-  border: 2px solid black;
+.img-credit {
+  background-color: #7d5839;
+  color: white;
+  text-decoration: none; 
 }
 
 /*item page styles*/
