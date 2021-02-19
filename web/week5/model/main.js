@@ -24,8 +24,8 @@ window.addEventListener("load", () => {
     $.ajax({
         type: 'GET',
         url: "../support/loadLocations.php",
-        data: data,  
-        success:function(data) {
+         
+        success:function() {
             console.log("Ajax successful!");
         }
     });
