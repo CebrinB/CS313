@@ -24,12 +24,13 @@ window.addEventListener("load", () => {
     $.ajax({
         type: 'GET',
         url: "../support/loadLocations.php",
-         
-        success:function() {
+        dataType: 'json',
+        success:function(data) {
             console.log("Ajax successful!");
+            console.log(data);
         }
     });
-    console.log(data);
+    
  });
 
 
