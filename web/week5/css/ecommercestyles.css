@@ -29,6 +29,13 @@ h3 {
   color: white;
 }
 
+#homeshop {
+  background:darkgrey;
+  color: black;
+  text-decoration: none;
+  border:darkslategray;
+}
+
 
 input {
   background: none!important;
