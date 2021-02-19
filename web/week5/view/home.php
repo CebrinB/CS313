@@ -34,7 +34,7 @@
             <div class="card-body">
               <h4 class="card-title">Saddles</h4>
               <p class="card-text">Shop our saddles</p>
-              <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
+              <a href="shop.php" class="btn btn-outline-secondary">SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
             <div class="card-body">
               <h4 class="card-title">Bridles</h4>
               <p class="card-text">Shop our bridles</p>
-              <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
+              <a href="shop.php" class="btn btn-outline-secondary">SHOP NOW</a>
             </div>  
           </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="card-body">
               <h4 class="card-title">Blankets</h4>
               <p class="card-text">Shop our Winter Blankets</p>
-              <a href="shop.php" class="btn btn-primary">SHOP NOW</a>
+              <a href="shop.php" class="btn btn-outline-secondary">SHOP NOW</a>
             </div>  
           </div>
         </div>
