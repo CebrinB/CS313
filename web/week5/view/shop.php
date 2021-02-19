@@ -1,10 +1,6 @@
 <?php
   // Start the session
   session_start();
-  
-  if (!isset($_SESSION['cart'])) {  
-    $_SESSION['cart'] = 0;
-  } else $_SESSION['cart'] += 1;
 
   include '../support/database.php';
  
@@ -50,6 +46,7 @@
             $stmt = $db->prepare($sql);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindValue(':filter', '%'.$_POST['filter'].'%', PDO::PARAM_STR);
+            echo $_POST['filter'];
             }
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
