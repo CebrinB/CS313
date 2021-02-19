@@ -17,7 +17,7 @@
             affordability, visibility, and competitive pricing for our customers.</h4> 
         </div>
         <div><h4>Thank you for visiting our online store!</h4></br></br></div>
-        <div><a class="homeshop" href="contact.php">Find a location</a></div>
+        <div><a id="aboutlocation" href="contact.php">Find a location</a></div>
       </div>
       <div class="col-sm-2"></div>
     </div>
