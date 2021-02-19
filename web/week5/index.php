@@ -1,5 +1,6 @@
 <?php 
   //This is the main controller for this site
+  session_start();
   //get the model
   require_once 'model.php';
   

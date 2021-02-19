@@ -16,10 +16,29 @@ function addToCart(item_id) {
               console.log("Ajax successful!");
           }
    });
-
    document.querySelector(selector).value = '';
-   console.log(quantity)
 }
+
+window.addEventListener("load", () => {
+
+    $.ajax({
+        type: 'GET',
+        url: "../support/loadLocations.php",
+        data: data,  
+        success:function(data) {
+            console.log("Ajax successful!");
+        }
+    });
+    console.log(data);
+ });
+
+
+
+    if (localStorage.hasOwnProperty('toDoList')) {
+      myTodo.loadTodo();
+    }
+    myTodo.displayTodoList();
+    });
 
 
 

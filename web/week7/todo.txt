@@ -1,7 +1,8 @@
-4. fill in the footer/fix footer on Home page
+1. Item page line 7 update get rid of htmlspecialchars
 7. store page - prices to the right.
 10. on item page, change sql query to JOIN user and review tables to get username.
 11. need to set username and password in localstorage/have them sign in.
 12. fill in locations page
 13. fill in cart page
 14. fill in checkout page
+ . format the Item page
