@@ -34,14 +34,6 @@ window.addEventListener("load", () => {
 
 
 
-    if (localStorage.hasOwnProperty('toDoList')) {
-      myTodo.loadTodo();
-    }
-    myTodo.displayTodoList();
-    });
-
-
-
 // document.getElementById('ajax').addEventListener('click', (e) => {
 // 	// prevent default
 // 	e.preventDefault();
