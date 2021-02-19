@@ -15,7 +15,7 @@ h3 {
   margin-top: 0px;
 }
 
-.navbar > *, .navbar > * > *, footer > * {
+.navbar, footer > * {
   color:white;
 }
 
