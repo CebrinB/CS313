@@ -19,7 +19,7 @@ function addToCart(item_id) {
           }
    });
 
-   selector.value = '';
+   quantity = '';
 }
 
 
