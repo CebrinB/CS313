@@ -19,6 +19,7 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
+const locations = [];
 window.addEventListener("load", () => {
 
     $.ajax({
@@ -27,11 +28,13 @@ window.addEventListener("load", () => {
         dataType: 'json',
         success:function(data) {
             console.log("Ajax successful!");
-            console.log(data);
+            locations = JSON.parse(data);
+            console.log(locations);
         }
     });
     
  });
+
 
 
 
