@@ -10,10 +10,17 @@
     <?php include 'navbar.php'; ?>
 
     <!-- Page Content -->
-    <div>At Billings Saddlery we strive to create a streamlined online shopping experience that provides
-    affordability, visibility, and competitive pricing for our customers. Thank you for visiting 
-    our online store!
-    <a href="contact.php">Find a location</a></div>
+    <div class="container">
+      <div class="col-sm-2"></div>
+      <div class="col-lg-8">
+        <div>At Billings Saddlery we strive to create a streamlined online shopping experience that provides
+            affordability, visibility, and competitive pricing for our customers. 
+        </div>
+        <div>Thank you for visiting our online store!</div>
+        <div><a class="quiet-link" href="contact.php">Find a location</a></div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
 
 
     <?php include 'footer.php'; ?>
