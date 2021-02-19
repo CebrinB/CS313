@@ -35,9 +35,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <?php 
-            echo '<h3>'.$row['item_name'].'</h3>';
-          } ?>
+          <?php echo '<h3>'.$row['item_name'].'</h3>'; ?>
           <div><h4><a href="" id="showform">Write a Review</a></h4></div>
           <form id="reviewForm" method ="POST" action="../support/insert_review.php">
             <input type="text" name="user_name" placeholder="Username">
