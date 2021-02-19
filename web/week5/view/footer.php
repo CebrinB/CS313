@@ -10,9 +10,15 @@
               This website was created for a school project and is not a real store.
           </div>
         </div>
-        <div class="col-md-4">Example 3</div>
+        <div class="col-md-4">
+          <div><h3>Cebrin Billings</h3> <span class="glyphicon glyphicon-grain"></span> 
+                Software Engineering Student <span class="glyphicon glyphicon-grain"></span></br>
+                  Connect with me
+          </div>
+          <div>Fontawesome linkedin github</div>
+          <div>Email</div>
+      </div>
       </div>
     </div>
   </div>
-  <p>Website by Cebrin Billings, all rights reserved. 2021</p>
 </footer>
