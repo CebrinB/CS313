@@ -15,9 +15,9 @@ h3 {
   margin-top: 0px;
 }
 
-/*nav, footer, a {
+nav > *, footer > * {
   color:white;
-}*/
+}
 
 .navbar-toggle button {
   color: white;
