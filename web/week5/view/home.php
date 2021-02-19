@@ -20,7 +20,7 @@
       <div class="container">
         <h1>The Best in Tack & Equipment.</h1>      
         <p>Find Exactly What You Need</p>
-        <a href="shop.php" role="button">START SHOPPING NOW</a>
+        <a href="shop.php">START SHOPPING NOW</a>
       </div>
     </div>
     
