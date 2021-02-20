@@ -62,7 +62,7 @@ window.addEventListener("load", () => {
                 info += '<div class="location"><h3>' + this.location_name + '</h3>'
                         + this.address + '</br>'
                         + this.city + ', ' + this.state + ', ' + this.zip + '</br>'
-                        + this.location_phone + '</div>';
+                        + this.location_phone + '</div></br></br>';
             });// END LOOP
 
             $('#locations').html(locations);
