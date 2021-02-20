@@ -62,7 +62,8 @@ window.addEventListener("load", () => {
             $.each(data, function (index, value) {
                 locations += '<li><a type="button">' + this.location_name + '</a></li>';
                 info += '<div class="location "><h3>' + this.location_name + '</h3></br>'
-                        + this.location_address + '</br>'
+                        + this.address + '</br>'
+                        + this.city + ', ' + this.state + ', ' + this.zip + '</br>'
                         + this.location_phone + '</div>';
             });// END LOOP
 
