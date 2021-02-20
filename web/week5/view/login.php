@@ -18,7 +18,7 @@
         $action = filter_input(INPUT_POST, 'action');
     }
 
-    echo $_POST['username'];
+    //echo $_POST['username'];
 
   switch ($action) {
     case 'signUp':
