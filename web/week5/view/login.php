@@ -46,8 +46,8 @@
    case 'signIn':
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-       $userData = getPassword($db, $username);
-       if (password_verify($password, $userData['password'])) {
+       $userPassword = getPassword($db, $username);
+       if (password_verify($password, $userPassword['password'])) {
            echo 'Password is valid!';
            $_SESSION['username'] = $username;
            header('Location: welcome.php');

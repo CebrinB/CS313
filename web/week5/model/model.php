@@ -11,12 +11,14 @@ function signUpUser($db, $username, $password) {
 }
 
 function getPassword($db, $username) {
-    $sql = 'SELECT password FROM ecommerce.user WHERE user_name = :username;';
+    echo $username;
+    $sql = 'SELECT password FROM ecommerce.user WHERE user_name = :username';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':username', $username, PDO::PARAM_STR);
     $stmt->execute();
     $userPassword = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
+    echo $userPassword['password';]
     return $userPassword;  
 }
 
