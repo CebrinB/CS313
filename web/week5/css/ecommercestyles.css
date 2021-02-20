@@ -109,6 +109,10 @@ footer {
   text-decoration: none;
 }
 
+.btn-block {
+  background-color: rgb(209, 90, 10);
+}
+
 /*item page styles*/
 .carousel-inner img {
   width: 100%; /* Set width to 100% */

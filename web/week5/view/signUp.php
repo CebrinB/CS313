@@ -2,7 +2,7 @@
 <body class="text-center">
   <?php include 'navbar.php'; ?>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row" id="padrow">
       <div class="col-lg-4"></div>
       <div class="col-lg-4 well">
         <h1>Create an Account</h1>

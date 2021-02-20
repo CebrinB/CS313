@@ -19,7 +19,7 @@
                         <button class="btn btn-lg btn-block" type="submit">Sign In</button>
                         <input type="hidden" name="action" value="signIn">
                     </form></br>
-                    <a href="signUp.php" id="aboutlocation">Don't have an account? Sign up Today!</a>
+                    <a href="signUp.php" id="aboutlocation">Don't have an account? Sign up today!</a>
                 </div>
             <div class="col-lg-4"></div>
         </div>
