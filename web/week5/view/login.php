@@ -43,7 +43,7 @@
    case 'signIn':
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-       $userData = getUser($db, $username);
+       $userData = getPassword($db, $username);
        if (password_verify($password, $userData['password'])) {
            echo 'Password is valid!';
            $_SESSION['username'] = $username;
