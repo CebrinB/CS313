@@ -46,8 +46,6 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
-const loc = '';
-
 window.addEventListener("load", () => {
 
     $.ajax({
@@ -55,33 +53,23 @@ window.addEventListener("load", () => {
         url: "../support/loadLocations.php",
         dataType: 'json',
         success:function(data) {
-            console.log("Ajax successful!load");
+            console.log("Ajax successful!");
             locations = '';
             info = '';
             
             $.each(data, function (index, value) {
                 locations += '<li><a type="button">' + this.location_name + '</a></li>';
-                info += '<div class="location "><h3>' + this.location_name + '</h3></br>'
+                info += '<div class="location"><h3>' + this.location_name + '</h3>'
                         + this.address + '</br>'
                         + this.city + ', ' + this.state + ', ' + this.zip + '</br>'
                         + this.location_phone + '</div>';
             });// END LOOP
 
             $('#locations').html(locations);
-            $('#info').html(info);
-
-            loc = 'abc';
-            
+            $('#info').html(info);            
         }
         
-    });
-    console.log(loc);
-    const childrenArray = Array.from(document.querySelector('#info'));
-    childrenArray.forEach(child => {
-      child.toggle();
-      console.log("yep");
-    });
-    
+    });    
  });
 
 
