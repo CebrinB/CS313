@@ -33,7 +33,7 @@
         <div class="col-md-3"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
         <div class="col-md-3">
           <?php echo '<h3>'.$row['item_name'].'</h3>';
-                echo '<h4>'.$row['item_price'].'</h4>';
+                echo '<h4>$'.$row['item_price'].'</h4>';
                 echo '<div>'.$row['item_description'].'</div>'; ?>
           
         </div>
