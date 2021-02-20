@@ -22,14 +22,14 @@
             echo '<span class="notice">*</span>';
           } ?>
           <input class="form-control" name="password2" id="checkpassword" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$" required>
-          <button type="submit">Sign up</button>
+          <button class="btn btn-lg btn-block" type="submit">Sign up</button>
           <input type="hidden" name="action" value="signUp">
-        </form>
-        <?php include 'footer.php'; ?>     
+        </form>     
       </div>
       <div class="col-lg-4"></div>
     </div> <!-- close row -->
   </div> <!-- close container -->
+  <?php include 'footer.php'; ?>
   
   
 </body>
