@@ -4,7 +4,7 @@
 
   include '../support/database.php';
 
-  $item_id = htmlspecialchars($_GET['item_id']);
+  $item_id = filter_input(INPUT_GET, 'item_id', FILTER_SANITIZE_NUMBER_INT);
  
   $sql = 'SELECT * FROM ecommerce.item WHERE item_id = '.$item_id;
   $stmt = $db->prepare($sql);
