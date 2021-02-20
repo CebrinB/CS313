@@ -2,7 +2,7 @@
   // Start the session
   session_start();
 
-  $_SESSION['username'] = 'tester1';
+  
 
   
   
