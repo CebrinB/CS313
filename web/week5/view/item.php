@@ -59,7 +59,7 @@
                           <div>'.$review['content'].'</div>
                           <div>'.$review['timestamp'].'</div>';
                   } 
-                } else die("No reviews for this item.");?>
+                } else echo "No reviews for this item.";?>
             </div>
           </div>
         </div>
