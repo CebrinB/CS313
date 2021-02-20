@@ -2,4 +2,3 @@
 3. need to set username and password in localstorage/have them sign in.
 4. fill in cart page
 5. fill in checkout page
-6. format the Item page
