@@ -30,8 +30,9 @@
     <!-- Page Content -->
     <div class="container">
       <div class="row" id="itemtop">
-        <div class="col-md-6 text-center" id="fillpic"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
-        <div class="col-md-6" id="descriptionmargin">
+        <div class="col-md-4 text-center" id="fillpic"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
         <div class="row">
           <?php echo '<div><h3>'.$row['item_name'].'</h3></div>';
                 echo '<h4 class="font-weight-bold">$'.$row['item_price'].'</h4>';
