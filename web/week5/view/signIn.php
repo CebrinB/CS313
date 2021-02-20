@@ -13,7 +13,7 @@ if (isset($_SESSION['message'])) {
         echo $_SESSION['message'];
        }
 ?>
-<form method="post" action="index.php">
+<form method="post" action="login.php">
 <label>Username:</label><br>
 <input name="username" type=text><br>
 <label>Password:</label><br>

@@ -3,7 +3,11 @@
 session_start();
 
 
+include 'head.php';
+
+?>
 <body>
+<?php include 'navbar.php'; ?>
 <h1>Sign Up</h1>
 <?php
 if (isset($_SESSION['message'])) {
@@ -11,7 +15,7 @@ if (isset($_SESSION['message'])) {
        }
 ?>
 <div id="error"></div>
-<form onsubmit="return clientSideStretch3()" method="post" action="index.php">
+<form onsubmit="return clientSideStretch3()" method="post" action="login.php">
 <label>Username:</label><br>
 <input name="username" type=text><br>
 <label>Password:</label><br>
@@ -25,5 +29,8 @@ if (isset($_SESSION['message'])) {
 <button type="submit">Sign Up</button>
 <input type="hidden" name="action" value="signUp">
 </form>
+<?php include 'footer.php'; ?>
 <script src="main.js"></script>
-</body></html><?php unset($_SESSION['message'])?>
+</body>
+</html>
+<?php unset($_SESSION['message'])?>
