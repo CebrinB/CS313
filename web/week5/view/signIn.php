@@ -1,6 +1,8 @@
 <?php include 'head.php' ?>
 <body class="text-center">
 <?php include 'navbar.php'; ?>
+<div class="col-lg-3"></div>
+<div class="col-lg-6">
 <h1>Sign In</h1>
 <?php
 if (isset($_SESSION['message'])) {
@@ -16,6 +18,8 @@ if (isset($_SESSION['message'])) {
 <input type="hidden" name="action" value="signIn">
 </form></br>
 <a href="signUp.php" id="homeshop">Don't have an account? Sign up Today!</a>
+</div>
+<div class="col-lg-3"></div>
 <?php include 'footer.php'; ?>
 </body>
 </html>
