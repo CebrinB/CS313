@@ -2,22 +2,11 @@
     //This is the main controller for this site
     session_start();
   
-    //get the model
+    //get the model & database
     require_once '../model/model.php';
     include '../support/database.php';
 
-    
-
-  
-//   $action = filter_input(INPUT_GET, 'action');
-//   if ($action == NULL) {
-//     $action = filter_input(INPUT_POST, 'action');
-//   }
-
-    if (isset($_SESSION['username'])) {
-        header('Location: view/home.php');
-    } else $action = filter_input(INPUT_GET, 'action');
-    
+    $action = filter_input(INPUT_GET, 'action');
     if ($action == NULL) {
         $action = filter_input(INPUT_POST, 'action');
     }
