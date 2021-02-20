@@ -34,7 +34,7 @@
         <div class="col-md-3">
           <?php echo '<h3>'.$row['item_name'].'</h3>'; ?>
           
-        
+</div>
         <div class="col-md-6">
           <div><h3>Reviews</h3></div>
             <div>
