@@ -1,3 +1,5 @@
+<?php echo $_SESSION['username']; ?>
+
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
