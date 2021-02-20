@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
         url: "../support/loadLocations.php",
         dataType: 'json',
         success:function(data) {
-            console.log("Ajax successful!");
+            console.log("Ajax successful!load");
             locations = data;
             console.log(locations);
         }
