@@ -46,7 +46,7 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
-//const loc = new Location(document.querySelector('#locations'));
+const loc = '';
 
 window.addEventListener("load", () => {
 
@@ -70,10 +70,12 @@ window.addEventListener("load", () => {
             $('#locations').html(locations);
             $('#info').html(info);
 
-            
+            loc = 'abc';
             
         }
+        
     });
+    console.log(loc);
     const childrenArray = Array.from(document.querySelector('#info'));
     childrenArray.forEach(child => {
       child.toggle();
