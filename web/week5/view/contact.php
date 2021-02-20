@@ -27,6 +27,8 @@
             </ul><br>
           
         </div>
+        <div class="col-md-8" id="info">
+        </div>
       </div>
     </div>
 

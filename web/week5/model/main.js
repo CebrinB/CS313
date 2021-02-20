@@ -57,12 +57,18 @@ window.addEventListener("load", () => {
         success:function(data) {
             console.log("Ajax successful!load");
             locations = '';
+            info = '';
             
             $.each(data, function (index, value) {
                 locations += '<li><a type="button">' + this.location_name + '</a></li>';
+                info += '<div class="location "><h3>' + this.location_name + '</h3></br>'
+                        + this.location_address + '</br>'
+                        + this.location_phone + '</div>';
             });// END LOOP
 
             $('#locations').html(locations);
+            $('#info').html(info);
+
             
             
         }
