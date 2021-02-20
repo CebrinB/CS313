@@ -19,6 +19,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a class="white" href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart: <?php echo $_SESSION['cart']; ?></a></li>
         <li><a class="white" href="../index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><?php echo $_SESSION['username']; ?></li>
       </ul>
     </div>
   </div>
