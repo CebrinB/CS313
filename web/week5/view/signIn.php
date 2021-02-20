@@ -2,7 +2,7 @@
 <body class="text-center">
     <?php include 'navbar.php'; ?>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="padrow">
             <div class="col-lg-3"></div>
                 <div class="col-lg-6 well">
                     <h1>Sign In</h1>
@@ -19,7 +19,7 @@
                         <button class="btn btn-lg btn-block" type="submit">Sign In</button>
                         <input type="hidden" name="action" value="signIn">
                     </form></br>
-                    <a href="signUp.php" id="homeshop">Don't have an account? Sign up Today!</a>
+                    <a href="signUp.php" id="aboutlocation">Don't have an account? Sign up Today!</a>
                 </div>
             <div class="col-lg-3"></div>
         </div>

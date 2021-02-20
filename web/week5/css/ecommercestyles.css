@@ -82,6 +82,10 @@ input {
   padding-bottom: 3em;
 }
 
+#padrow {
+  padding: 5em;
+}
+
 footer {
   width: 100%;
   
