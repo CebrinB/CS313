@@ -5,6 +5,10 @@
     //get the model
     require_once '../model/model.php';
     include '../support/database.php';
+    include 'head.php'
+    ?>
+    <body>
+    <?php include 'navbar.php';
   
 //   $action = filter_input(INPUT_GET, 'action');
 //   if ($action == NULL) {
@@ -65,4 +69,5 @@
    include "signIn.php";
    break;
 }
+
 ?>
