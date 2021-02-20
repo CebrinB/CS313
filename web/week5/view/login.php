@@ -48,8 +48,7 @@
            exit;
        }
 
-       if ($password == $userPassword['password']) {
-       //if (password_verify($password, $userPassword['password'])) {
+       if (($password == $userPassword['password']) || (password_verify($password, $userPassword['password']))) {
            echo 'Password is valid!';
            $_SESSION['username'] = $username;
            header('Location: shop.php');
