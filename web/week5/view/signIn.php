@@ -12,10 +12,10 @@
                         }
                     ?>
                     <form method="post" action="login.php" class="form-signin">
-                        <label>Username:</label><br>
-                        <input class="form-control" name="username" type=text required autofocus><br>
-                        <label>Password:</label><br>
-                        <input class="form-control" name="password" type="password" required><br>
+                        <label for="username" class="sr-only">Username:</label><br>
+                        <input class="form-control" name="username" id="username" type="text" placeholder="Username" required autofocus><br>
+                        <label for="password" class="sr-only">Password:</label><br>
+                        <input class="form-control" name="password" id="password" type="password" placeholder="Password" required><br>
                         <button class="btn btn-lg btn-block" type="submit">Sign In</button>
                         <input type="hidden" name="action" value="signIn">
                     </form></br>
