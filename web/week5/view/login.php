@@ -18,6 +18,8 @@
         $action = filter_input(INPUT_POST, 'action');
     }
 
+    echo $_POST['username'];
+
   switch ($action) {
     case 'signUp':
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
