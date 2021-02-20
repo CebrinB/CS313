@@ -34,7 +34,6 @@ user_id INT NOT NULL REFERENCES ecommerce.user(user_id),
 rating SMALLINT NOT NULL CHECK (0<rating AND rating<=5),
 title TEXT NOT NULL,
 content TEXT NOT NULL,
-timestamp TIMESTAMP(6)
 item_id INT NOT NULL REFERENCES ecommerce.item(item_id);
 );
 
