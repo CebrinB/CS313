@@ -38,6 +38,13 @@
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
        $userPassword = getPassword($db, $username);
+       
+       if ($userPassword['password'] == '') {
+           echo 'Username does not exist!';
+           include 'signIn.php';
+           exit;
+       }
+
        if ($password == $userPassword['password']) {
        //if (password_verify($password, $userPassword['password'])) {
            echo 'Password is valid!';
