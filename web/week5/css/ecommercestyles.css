@@ -107,7 +107,7 @@ footer {
 
 #fillpic {
   background-color: rgb(184, 175, 188);
-  border: 5px, double, black;
+  border: double, black;
   padding-top: 3em;
   padding-bottom: 3em;
 }
