@@ -5,10 +5,9 @@
     //get the model
     require_once '../model/model.php';
     include '../support/database.php';
-    include 'head.php'
-    ?>
-    <body>
-    <?php include 'navbar.php';
+
+    
+
   
 //   $action = filter_input(INPUT_GET, 'action');
 //   if ($action == NULL) {
@@ -22,8 +21,6 @@
     if ($action == NULL) {
         $action = filter_input(INPUT_POST, 'action');
     }
-
-    //echo $_POST['username'];
 
   switch ($action) {
     case 'signUp':
