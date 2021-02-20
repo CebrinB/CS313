@@ -16,12 +16,12 @@
           <?php if (isset($mark)) {
             echo '<span class="notice">*</span>';
           } ?>
-          <input class="form-control" name="password" id="password" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$" required>
+          <input class="form-control" name="password" id="password" type="password" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$" required>
           <label for="checkpassword" class="sr-only">Confirm password:</label><br>
           <?php if (isset($mark)) {
             echo '<span class="notice">*</span>';
           } ?>
-          <input class="form-control" name="password2" id="checkpassword" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$" required>
+          <input class="form-control" name="password2" id="checkpassword" type="password" placeholder="Re-Enter Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$" required>
           <button class="btn btn-lg btn-block" type="submit">Sign up</button>
           <input type="hidden" name="action" value="signUp">
         </form>     
