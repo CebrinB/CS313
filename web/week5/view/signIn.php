@@ -1,5 +1,5 @@
 <?php include 'head.php' ?>
-<body>
+<body class="text-center">
 <?php include 'navbar.php'; ?>
 <h1>Sign In</h1>
 <?php
