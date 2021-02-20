@@ -47,13 +47,12 @@
     
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-       echo $password;
        $userPassword = getPassword($db, $username);
        if ($password == $userPassword['password']) {
        //if (password_verify($password, $userPassword['password'])) {
            echo 'Password is valid!';
            $_SESSION['username'] = $username;
-           header('Location: welcome.php');
+           header('Location: shop.php');
            exit;
        } else {
            echo 'Invalid password.';
