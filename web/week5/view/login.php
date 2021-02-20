@@ -49,7 +49,8 @@
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
        echo $password;
        $userPassword = getPassword($db, $username);
-       if (password_verify($password, $userPassword['password'])) {
+       if ($password == $userPassword['password']) {
+       //if (password_verify($password, $userPassword['password'])) {
            echo 'Password is valid!';
            $_SESSION['username'] = $username;
            header('Location: welcome.php');
