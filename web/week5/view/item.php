@@ -73,7 +73,7 @@
         <div class="col-md-6 well">
           <div><h4>Write a Review</h4></div>
             <form id="reviewForm" method ="POST" action="../support/insert_review.php">
-              <input class="form-control" type="text" name="user_name" placeholder="Username" required>
+              <input class="form-control" type="text" name="user_name" placeholder="Enter your username" required><br>
               <div class="stars">
                 <label for="rating"> Rating 1 - 5:</label>   1
                 <input type="radio" name="rating" value="1"> 
@@ -81,9 +81,9 @@
                 <input type="radio" name="rating" value="3"> 
                 <input type="radio" name="rating" value="4"> 
                 <input type="radio" name="rating" value="5">  5
-              </div>
-              <input class="form-control" type="text" name="title" placeholder="Title for your Review">
-              <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea>
+              </div><br>
+              <input class="form-control" type="text" name="title" placeholder="Title for your Review"><br>
+              <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea><br>
               <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
               <button class="btn btn-lg btn-block" type="submit" value="Submit Review">
             </form>
