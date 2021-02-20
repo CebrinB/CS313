@@ -29,7 +29,7 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row row-no-gutters" id="itemtop">
+      <div class="row" id="itemtop">
         <div class="col-md-6 text-center" id="fillpic"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
         <div class="col-md-6" id="descriptionmargin">
         <div class="row">
