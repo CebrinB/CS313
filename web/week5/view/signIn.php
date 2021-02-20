@@ -5,7 +5,7 @@
         <div class="row" id="padrow">
             <div class="col-lg-4"></div>
                 <div class="col-lg-4 well">
-                    <h1>Sign In</h1>
+                    <h1>please sign in</h1>
                     <?php
                     if (isset($_SESSION['message'])) {
                             echo $_SESSION['message'];
