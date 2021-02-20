@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Activity 07 </title>
-    <link rel="stylesheet" href="styles.css" media="screen">
-</head>
+<?php
+
+session_start();
+
+
 <body>
 <h1>Sign Up</h1>
 <?php
