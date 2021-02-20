@@ -83,7 +83,7 @@ input {
 }
 
 #padrow {
-  padding: 5em;
+  padding: 3em;
 }
 
 footer {
@@ -110,7 +110,7 @@ footer {
 }
 
 .btn-block {
-  background-color: rgb(209, 90, 10);
+  background-color: rgb(136, 124, 144);
 }
 
 /*item page styles*/
