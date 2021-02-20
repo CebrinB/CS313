@@ -62,6 +62,7 @@
           </div>
         </div>
       </div>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <div><h4><a href="" id="showform">Write a Review</a></h4></div>
@@ -82,7 +83,7 @@
               <input type="submit" value="Save Review">
             </form>
           </div>
-        </div>
+        
       </div>
     </div>
   </div>
