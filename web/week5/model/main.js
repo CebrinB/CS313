@@ -1,27 +1,27 @@
-class Location {
-    constructor(elementId) {
-      this.parentElement = elementId;
-      this.loc = [];
-    }
+// class Location {
+//     constructor(elementId) {
+//       this.parentElement = elementId;
+//       this.loc = [];
+//     }
 
-    getLocations() {
-        $.ajax({
-            type: 'GET',
-            url: "../support/loadLocations.php",
-            dataType: 'json',
-            success:function(data) {
-                console.log("Ajax successful!load");
-                locations = '';
+//     getLocations() {
+//         $.ajax({
+//             type: 'GET',
+//             url: "../support/loadLocations.php",
+//             dataType: 'json',
+//             success:function(data) {
+//                 console.log("Ajax successful!load");
+//                 locations = '';
                 
-                $.each(data, function (index, value) {
-                    locations += '<li><a>' + this.location_name + '</a></li>';
-                });// END LOOP
+//                 $.each(data, function (index, value) {
+//                     locations += '<li><a>' + this.location_name + '</a></li>';
+//                 });// END LOOP
 
-                $('#locations').html(locations);
-            }
-        });
-    }
-}
+//                 $('#locations').html(locations);
+//             }
+//         });
+//     }
+// }
 
 
 
@@ -46,11 +46,27 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
-const loc = new Location(document.querySelector('#locations'));
+//const loc = new Location(document.querySelector('#locations'));
 
 window.addEventListener("load", () => {
 
-    loc.getLocations();
+    $.ajax({
+        type: 'GET',
+        url: "../support/loadLocations.php",
+        dataType: 'json',
+        success:function(data) {
+            console.log("Ajax successful!load");
+            locations = '';
+            
+            $.each(data, function (index, value) {
+                locations += '<li><a type="button">' + this.location_name + '</a></li>';
+            });// END LOOP
+
+            $('#locations').html(locations);
+            
+            
+        }
+    });
     
  });
 
