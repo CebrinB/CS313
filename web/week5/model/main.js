@@ -1,3 +1,30 @@
+class Location {
+    constructor(elementId) {
+      this.parentElement = elementId;
+      this.loc = [];
+    }
+
+    getLocations() {
+        $.ajax({
+            type: 'GET',
+            url: "../support/loadLocations.php",
+            dataType: 'json',
+            success:function(data) {
+                console.log("Ajax successful!load");
+                locations = '';
+                
+                $.each(data, function (index, value) {
+                    locations += '<li><a>' + this.location_name + '</a></li>';
+                });// END LOOP
+
+                $('#locations').html(locations);
+            }
+        });
+    }
+}
+
+
+
 function addToCart(item_id) {
     user_id = 1;
 
@@ -19,26 +46,11 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
+const loc = new Location(document.querySelector('#locations'));
 
 window.addEventListener("load", () => {
 
-    $.ajax({
-        type: 'GET',
-        url: "../support/loadLocations.php",
-        dataType: 'json',
-        success:function(data) {
-            console.log("Ajax successful!load");
-            locations = '';
-            
-            $.each(data, function (index, value) {
-                locations += '<li><a>' + this.location_name + '</a></li>';
-            });// END LOOP
-
-            $('#locations').html(locations);
-            
-            
-        }
-    });
+    loc.getLocations();
     
  });
 
