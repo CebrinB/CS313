@@ -51,6 +51,7 @@
           </form>
         </div>
         <div class="col-sm-8">
+          <div><h3>Reviews</h3></div>
             <div>
               <?php
                 if (sizeof($reviews) > 0) {
