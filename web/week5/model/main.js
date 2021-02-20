@@ -74,6 +74,11 @@ window.addEventListener("load", () => {
             
         }
     });
+    const childrenArray = Array.from(document.querySelector('#info'));
+    childrenArray.forEach(child => {
+      child.toggle();
+      console.log("yep");
+    });
     
  });
 
