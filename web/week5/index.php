@@ -5,10 +5,14 @@
   //get the model
   require_once 'model.php';
   
-  $action = filter_input(INPUT_GET, 'action');
-  if ($action == NULL) {
-    $action = filter_input(INPUT_POST, 'action');
-  }
+//   $action = filter_input(INPUT_GET, 'action');
+//   if ($action == NULL) {
+//     $action = filter_input(INPUT_POST, 'action');
+//   }
+
+if (isset($_SESSION['username'])) {
+    header('Location: /view/home.php');
+} else header('Location: /view/signIn.php');
 
   switch ($action) {
     case 'signUp':
