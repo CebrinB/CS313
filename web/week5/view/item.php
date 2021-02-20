@@ -38,8 +38,8 @@
                 echo '<h4 class="font-weight-bold">$'.$row['item_price'].'</h4>';
                 echo '<div>'.$row['item_description'].'</div>'; ?>
         </div>
-        <div class="row">
-        <div class="col-md-6">
+        <div class="row" id="padrow">
+        <div class="col-md-6 well">
           <div><h3>Reviews</h3></div>
             <div>
               <?php
