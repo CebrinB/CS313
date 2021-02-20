@@ -39,7 +39,7 @@
                 echo '<div>'.$row['item_description'].'</div>'; ?>
         </div>
         <div class="row" id="padrow">
-        <div class="col-md-6 well">
+        <div class="col-md-6">
           <div><h3>Reviews</h3></div>
             <div>
               <?php
@@ -69,7 +69,7 @@
       </div>
       
       <div class="row" id="padrow">
-        <div class="col-md-6">
+        <div class="col-md-6 well">
           <div><h4>Write a Review</h4></div>
             <form id="reviewForm" method ="POST" action="../support/insert_review.php">
               <input type="text" name="user_name" placeholder="Username">
