@@ -19,7 +19,7 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
-const locations = [];
+let locations = [];
 window.addEventListener("load", () => {
 
     $.ajax({
