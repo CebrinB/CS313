@@ -28,11 +28,13 @@ window.addEventListener("load", () => {
         dataType: 'json',
         success:function(data) {
             console.log("Ajax successful!load");
-            location = '';
+            locations = '';
             
             $.each(data, function (index, value) {
-                location += '<li><a type="button">' + this[index].location_name + '</a></li>';
+                locations += '<li><a>' + this.location_name + '</a></li>';
             });// END LOOP
+
+            $('#locations').html(locations);
             
             
         }
