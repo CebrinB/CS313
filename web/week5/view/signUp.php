@@ -30,7 +30,7 @@
       <div class="col-lg-4"></div>
     </div> <!-- close row -->
   </div> <!-- close container -->
-  </div>
-  <?php include 'footer.php'; ?>
+  
+  
 </body>
 </html>
