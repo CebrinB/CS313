@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Activity 07 </title>
-    <link rel="stylesheet" href="styles.css" media="screen">
-</head>
+<?php include 'head.php' ?>
 <body>
+<?php include 'navbar.php'; ?>
 <h1>Sign In</h1>
 <?php
 if (isset($_SESSION['message'])) {
@@ -22,5 +16,6 @@ if (isset($_SESSION['message'])) {
 <input type="hidden" name="action" value="signIn">
 </form></br>
 <a href="signUp.php" id="homeshop">Don't have an account? Sign up Today!</a>
+<?php include 'footer.php'; ?>
 </body>
 </html>
