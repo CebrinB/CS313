@@ -16,10 +16,8 @@
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
        $password2 = filter_input(INPUT_POST, 'password2', FILTER_SANITIZE_STRING);
-       echo $username;
-       echo $password;
-       echo $password2;
        $pattern = '/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/';
+       
        if (!preg_match($pattern, $password)) {
            $_SESSION['message'] = "Password must contain 7 characters and number";
            include "signUp.php";
@@ -33,11 +31,13 @@
        }
        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
        $signUp = signUpUser($db, $username, $hashedPassword);
-       header('Location: signIn.php');
-        exit;
-       break;
+       if ($signUp > 0) {
+         $_SESSION['username'] = $username;
+       }
+         header('Location: home.php');
+         exit;
+         break;
    case 'signIn':
-    
        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
        $userPassword = getPassword($db, $username);

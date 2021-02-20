@@ -5,7 +5,8 @@ VALUES ('321 Wallaby Ln.', 'Sydney', 'AU', '11111'),
         ('Prinsengracht 263-267 1016 GV', 'Amsterdam', 'Netherlands','12312');
 
 INSERT INTO ecommerce.user (user_name, password, billing_address, billing_phone, display_name) 
-  VALUES ('tester1', 'test127&', '1', '555-555-5555', 'John Doe');
+  VALUES ('tester1', 'test127&', '1', '555-555-5555', 'John Doe'),
+         ('tester1', 'Howdy176', '2', '543-210-2345', 'Jane Dough');
 
 INSERT INTO ecommerce.location (location_name, location_address, location_phone)
   VALUES ('Corner Location', 1, '555-555-5554'),
@@ -23,6 +24,6 @@ INSERT INTO ecommerce.item (item_name, item_price, item_description, item_type)
 
 INSERT INTO ecommerce.review (user_id, rating, title, content, item_id)
   VALUES (1, 5,'Love it!','Fits my horse perfectly.', 7),
-         (1, 1, 'Too big for my pony', 'The description does 
+         (2, 1, 'Too big for my pony', 'The description does 
          not specify sizing for this halter. It did not fit 
          my pony at all.', 7);
