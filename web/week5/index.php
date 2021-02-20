@@ -11,8 +11,8 @@
 //   }
 
 if (isset($_SESSION['username'])) {
-    header('Location: /view/home.php');
-} else header('Location: /view/signIn.php');
+    header('Location: view/home.php');
+} else header('Location: view/signIn.php');
 
   switch ($action) {
     case 'signUp':
