@@ -38,7 +38,8 @@
                 echo '<h4 class="font-weight-bold">$'.$row['item_price'].'</h4>';
                 echo '<div>'.$row['item_description'].'</div>'; ?>
         </div>
-        <div class="row" id="padrow">
+        <div class="row"><br>
+        <div class="col-md-6"></div>
         <div class="col-md-6">
           <div><h3>Reviews</h3></div>
             <div>
@@ -72,15 +73,14 @@
         <div class="col-md-6 well">
           <div><h4>Write a Review</h4></div>
             <form id="reviewForm" method ="POST" action="../support/insert_review.php">
-              <input type="text" name="user_name" placeholder="Username">
+              <input class="form-control" type="text" name="user_name" placeholder="Username" required>
               <div class="stars">
-                <label> Rating 1 - 5:
-                  <input type="radio" name="rating" value="1"> 
-                  <input type="radio" name="rating" value="2"> 
-                  <input type="radio" name="rating" value="3"> 
-                  <input type="radio" name="rating" value="4"> 
-                  <input type="radio" name="rating" value="5">
-                </label>
+                <label for="rating"> Rating 1 - 5:</label>1
+                <input type="radio" name="rating" value="1"> 
+                <input type="radio" name="rating" value="2"> 
+                <input type="radio" name="rating" value="3"> 
+                <input type="radio" name="rating" value="4"> 
+                <input type="radio" name="rating" value="5">5
               </div>
               <input type="text" name="title" placeholder="Title for your Review">
               <textarea name="content" placeholder="Tell us what you think of our product!"></textarea>
