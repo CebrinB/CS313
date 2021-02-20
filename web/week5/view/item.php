@@ -30,6 +30,7 @@
     <!-- Page Content -->
     <div class="container">
       <div class="row" id="itemtop">
+      <div class="col-md-3"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
         <div class="col-md-3">
           <?php echo '<h3>'.$row['item_name'].'</h3>'; ?>
           <div><h4><a href="" id="showform">Write a Review</a></h4></div>
@@ -50,7 +51,7 @@
             <input type="submit" value="Save Review">
           </form>
         </div>
-        <div class="col-md-3"></div>
+        
         <div class="col-md-6">
           <div><h3>Reviews</h3></div>
             <div>
