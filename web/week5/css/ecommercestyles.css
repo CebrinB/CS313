@@ -105,11 +105,16 @@ footer {
   margin-top: 3em;
 }
 
+#descriptionmargin {
+  margin-left: 3px;
+}
+
 #fillpic {
   background-color: rgb(184, 175, 188);
   border: double, black;
   padding-top: 3em;
   padding-bottom: 3em;
+  margin-right: 3px;
 }
 
 .quiet-link {

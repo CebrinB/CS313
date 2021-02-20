@@ -31,7 +31,7 @@
     <div class="container">
       <div class="row row-no-gutters" id="itemtop">
         <div class="col-md-6 text-center" id="fillpic"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="descriptionmargin">
         <div class="row">
           <?php echo '<div><h3>'.$row['item_name'].'</h3></div>';
                 echo '<h4 class="font-weight-bold">$'.$row['item_price'].'</h4>';
