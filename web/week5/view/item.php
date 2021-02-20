@@ -76,7 +76,7 @@
               <input class="form-control" type="text" name="user_name" placeholder="Username" required>
               <div class="stars">
                 <label for="rating"> Rating 1 - 5:</label>   1
-                <input class="form-control" type="radio" name="rating" value="1"> 
+                <input type="radio" name="rating" value="1"> 
                 <input type="radio" name="rating" value="2"> 
                 <input type="radio" name="rating" value="3"> 
                 <input type="radio" name="rating" value="4"> 
@@ -85,7 +85,7 @@
               <input class="form-control" type="text" name="title" placeholder="Title for your Review">
               <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea>
               <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
-              <input type="submit" value="Save Review" id="aboutlocation">
+              <input class="btn btn-lg btn-block" type="submit" value="Submit Review">
             </form>
           </div>
       </div>
