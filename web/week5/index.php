@@ -3,7 +3,7 @@
   session_start();
   
   //get the model
-  require_once '/model/model.php';
+  require_once 'model/model.php';
   
 //   $action = filter_input(INPUT_GET, 'action');
 //   if ($action == NULL) {
