@@ -5,9 +5,9 @@ CREATE TABLE ecommerce.user (
 user_id SERIAL NOT NULL PRIMARY KEY,
 user_name VARCHAR(56) NOT NULL,
 password VARCHAR(56) NOT NULL,
-billing_address INT NOT NULL REFERENCES ecommerce.address(address_id),
-billing_phone VARCHAR(15) NOT NULL,
-display_name VARCHAR(56) NOT NULL
+billing_address INT REFERENCES ecommerce.address(address_id),
+billing_phone VARCHAR(15),
+display_name VARCHAR(56)
 );
 
 //table for store locations
