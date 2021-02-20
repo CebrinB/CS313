@@ -28,7 +28,7 @@ window.addEventListener("load", () => {
         dataType: 'json',
         success:function(data) {
             console.log("Ajax successful!");
-            locations = JSON.parse(data);
+            locations = data;
             console.log(locations);
         }
     });
