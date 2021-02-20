@@ -30,27 +30,10 @@
     <!-- Page Content -->
     <div class="container">
       <div class="row" id="itemtop">
-      <div class="col-md-3"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
+        <div class="col-md-3"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
         <div class="col-md-3">
           <?php echo '<h3>'.$row['item_name'].'</h3>'; ?>
-          <div><h4><a href="" id="showform">Write a Review</a></h4></div>
-          <form id="reviewForm" method ="POST" action="../support/insert_review.php">
-            <input type="text" name="user_name" placeholder="Username">
-            <div class="stars">
-              <label> Rating 1 - 5:
-                <input type="radio" name="rating" value="1"> 
-                <input type="radio" name="rating" value="2"> 
-                <input type="radio" name="rating" value="3"> 
-                <input type="radio" name="rating" value="4"> 
-                <input type="radio" name="rating" value="5">
-              </label>
-            </div>
-            <input type="text" name="title" placeholder="Title for your Review">
-            <textarea name="content" placeholder="Tell us what you think of our product!"></textarea>
-            <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
-            <input type="submit" value="Save Review">
-          </form>
-        </div>
+          
         
         <div class="col-md-6">
           <div><h3>Reviews</h3></div>
@@ -76,6 +59,28 @@
                   } 
                 } else die("No reviews for this item.");?>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div><h4><a href="" id="showform">Write a Review</a></h4></div>
+            <form id="reviewForm" method ="POST" action="../support/insert_review.php">
+              <input type="text" name="user_name" placeholder="Username">
+              <div class="stars">
+                <label> Rating 1 - 5:
+                  <input type="radio" name="rating" value="1"> 
+                  <input type="radio" name="rating" value="2"> 
+                  <input type="radio" name="rating" value="3"> 
+                  <input type="radio" name="rating" value="4"> 
+                  <input type="radio" name="rating" value="5">
+                </label>
+              </div>
+              <input type="text" name="title" placeholder="Title for your Review">
+              <textarea name="content" placeholder="Tell us what you think of our product!"></textarea>
+              <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
+              <input type="submit" value="Save Review">
+            </form>
           </div>
         </div>
       </div>
