@@ -29,14 +29,15 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row" id="itemtop">
-        <div class="col-md-3"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
-        <div class="col-md-3">
-          <?php echo '<h3>'.$row['item_name'].'</h3>';
-                echo '<h4>$'.$row['item_price'].'</h4>';
+      <div class="row row-no-gutters" id="itemtop">
+        <div class="col-md-6"><img src="../images/<?php echo $row['item_type'] . $row['item_id'] ?>.jpg"></div>
+        <div class="col-md-6">
+        <div class="row">
+          <?php echo '<div><h3>'.$row['item_name'].'</h3></div>';
+                echo '<h4 class="font-weight-bold">$'.$row['item_price'].'</h4>';
                 echo '<div>'.$row['item_description'].'</div>'; ?>
-          
         </div>
+        <div class="row">
         <div class="col-md-6">
           <div><h3>Reviews</h3></div>
             <div>
@@ -66,9 +67,9 @@
       </div>
       </div>
       
-      <div class="row">
+      <div class="row" id="padrow">
         <div class="col-md-6">
-          <div><h4><a href="" id="showform">Write a Review</a></h4></div>
+          <div><h4>Write a Review</h4></div>
             <form id="reviewForm" method ="POST" action="../support/insert_review.php">
               <input type="text" name="user_name" placeholder="Username">
               <div class="stars">
@@ -86,8 +87,7 @@
               <input type="submit" value="Save Review">
             </form>
           </div>
-        
-              </div>
+      </div>
     </div>
   </div>
   <hr>
