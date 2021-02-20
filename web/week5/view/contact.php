@@ -20,10 +20,10 @@
           
             <ul class="nav nav-pills nav-stacked" id="locations">
                
-              <li><a href="shop.php" type="button">> All</a></li>
+              <!-- <li><a href="shop.php" type="button">> All</a></li>
               <li><a type="button">> <input type="submit" name="filter" value="Saddles"></a></li>
               <li><a type="button">> <input type="submit" name="filter" value="Bridles"></a></li>
-              <li><a type="button">> <input type="submit" name="filter" value="Blankets"></a></li>
+              <li><a type="button">> <input type="submit" name="filter" value="Blankets"></a></li> -->
             </ul><br>
           
         </div>
