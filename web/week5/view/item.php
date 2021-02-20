@@ -85,7 +85,7 @@
               <input class="form-control" type="text" name="title" placeholder="Title for your Review">
               <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea>
               <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
-              <input class="btn btn-lg btn-block" type="submit" value="Submit Review">
+              <button class="btn btn-lg btn-block" type="submit" value="Submit Review">
             </form>
           </div>
       </div>
