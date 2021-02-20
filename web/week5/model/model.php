@@ -18,7 +18,7 @@ function getPassword($db, $username) {
     $stmt->execute();
     $userPassword = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
-    echo $userPassword['password';]
+    echo $userPassword['password'];
     return $userPassword;  
 }
 
