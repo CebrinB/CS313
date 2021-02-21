@@ -1,4 +1,1 @@
 2. store page - prices to the right.
-
-
-4. write a javascript function that totals the cart
