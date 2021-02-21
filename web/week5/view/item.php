@@ -94,6 +94,6 @@
 
 
     <?php include 'footer.php'; ?>
-    <script src="main.js" ></script>
+    <script src="../model/main.js" ></script>
   </body>
 </html>
