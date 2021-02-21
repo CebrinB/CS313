@@ -8,6 +8,7 @@
 
   <body>
     <?php include 'navbar.php'; ?>
+    
 
     <!-- Page Content -->
     <div class="container text-center about">

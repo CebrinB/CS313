@@ -1,4 +1,4 @@
 2. store page - prices to the right.
-3. separate javascript into separate files.
-5. fill in checkout page
-1. fix 'addtocart' for correct userid localStorage.
+
+
+4. write a javascript function that totals the cart

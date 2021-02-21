@@ -26,7 +26,8 @@
           <div>
             <?php if (!isset($_SESSION['username'])) { 
                     echo $msg;
-                  } else echo '<div id="cart" class="username">'.$_SESSION['username'].'</div>'; ?>
+                  } 
+                  echo '<div id="cart" class="username">'.$_SESSION['username'].'</div>'; ?>
           </div>
         </div> <!-- close column -->
         

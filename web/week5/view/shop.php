@@ -3,10 +3,14 @@
   session_start();
 
   include '../support/database.php';
- 
 
-
-
+  //if user is logged in, preserve the username
+  $username = '';
+  $user_id = '';
+  if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+    $user_id = $_SESSION['user_id'];
+  }
 
   include 'head.php';
 
@@ -15,6 +19,7 @@
 
   <body>
     <?php include 'navbar.php'; ?>
+    <?php echo '<div class="username">'.$username.'</div>';} ?>
 
     <!-- Page Content -->
     <div class="container-fluid">
@@ -84,11 +89,7 @@
       </div>
     </div>
 
-
-
- 
-
     <?php include 'footer.php'; ?>
-    <script src="../model/main.js"></script>
+    <script src="../library/cart.js"></script>
   </body>
 </html>
