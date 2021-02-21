@@ -4,18 +4,13 @@ session_start();
 
 require_once 'database.php';
 
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $user_name = htmlspecialchars($_POST['user_name']);
-  $rating = htmlspecialchars($_POST['rating']);
-  $title = htmlspecialchars($_POST['title']);
-  $content = htmlspecialchars($_POST['content']);
-  $item_id = htmlspecialchars($_POST['item_id']);
+  $user_name = filter_input(INPUT_POST, 'user_name', FILTER_SANITIZE_STRING);
+  $rating = filter_input(INPUT_POST, 'rating', FILTER_SANITIZE_NUMBER_INT);
+  $title = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING);
+  $content = filter_input(INPUT_POST, 'content', FILTER_SANITIZE_STRING);
   $item_id = filter_input(INPUT_POST, 'item_id', FILTER_SANITIZE_NUMBER_INT);
 }
-
-
 
 $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
 $stmt = $db->prepare($sql);
@@ -38,6 +33,4 @@ $new_page = "../view/item.php?item_id=$item_id";
 
 header("Location: $new_page");
 die();
-
-
 ?>
