@@ -15,7 +15,7 @@ function addToCart(item_id) {
         url: "../support/addtocart.php",
         data: data,  
         success:function(data) {
-            console.log("Ajax successful!");
+            console.log("Ajax successful! Items added to cart");
         }
  });
  document.querySelector(selector).value = '';
@@ -28,12 +28,12 @@ function subtotal() {
     priceArray.forEach(price => {
       total += parseFloat(price.innerHTML);
      });
-  check = (total).toLocaleString('en-US', {
+  format = (total).toLocaleString('en-US', {
   style: 'currency',
   currency: 'USD',
   });
-  console.log(check);
-  document.querySelector('#total').innerHTML = total;
+
+  document.querySelector('#total').innerHTML = format;
 }
 
 //generates HTML to display a user's cart
@@ -67,7 +67,7 @@ function getCart()
           product += "</tr>";
         });// END LOOP
          
-          product += "<td></td><td></td><td>Total: </td><td>$<span id='total'></span></td>";
+          product += "<td></td><td></td><td>Total: </td><td><span id='total'></span></td>";
           product += "</table>";
           product += "<button class='btn' onclick='subtotal()'>Update Total</button>";
       //added end
