@@ -116,6 +116,10 @@ footer {
   text-decoration: none;
 }
 
+#username {
+  display: none;
+}
+
 .btn-block {
   background-color: rgb(184, 175, 188);
 }
