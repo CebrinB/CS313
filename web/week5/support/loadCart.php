@@ -4,7 +4,7 @@ session_start();
 
 require_once 'database.php';
 
-$username = filter_input(INPUT_GET, 'username', FILTER_SANITIZE_NUMBER_INT);
+$username = filter_input(INPUT_GET, 'username', FILTER_SANITIZE_STRING);
 echo $username;
 
 $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$username.'\'';
