@@ -50,7 +50,7 @@ function getCart()
     {
       console.log('checkout run');
       data = {};
-      data['username'] = document.querySelector('#username').value;
+      data['username'] = document.querySelector('.username').innerHTML;
       console.log(data['username']);
 
       $.ajax({
@@ -87,6 +87,7 @@ function getCart()
         
       });//ajax function call
      
+      $('#cart').removeClass("username");
     }// End function
 
     function attempt() {
@@ -120,6 +121,7 @@ function getCart()
 
 window.addEventListener("load", () => {
 
+    getCart();
     $.ajax({
         type: 'GET',
         url: "../support/loadLocations.php",
