@@ -15,9 +15,9 @@
                  Connect with me
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/cebrinbillings/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://cebrinb.github.io/"><i class="fab fa-github"></i></a>
-          <a href="mailto:cebrin.billings@gmail.com"><i class="far fa-paper-plane"></i></a>
+          <a class="white quiet-link" href="https://www.linkedin.com/in/cebrinbillings/"><i class="fab fa-linkedin-in"></i></a>
+          <a class="white quiet-link" href="https://cebrinb.github.io/"><i class="fab fa-github"></i></a>
+          <a class="white quiet-link" href="mailto:cebrin.billings@gmail.com"><i class="far fa-paper-plane"></i></a>
         </div>
       </div>
     </div>
