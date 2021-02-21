@@ -26,7 +26,7 @@ function subtotal() {
   total = 0;
   const priceArray = document.querySelectorAll('.subtotal');
     priceArray.forEach(price => {
-      total += price.innerHTML;
+      total += parseInt(price.innerHTML);
      });
   document.querySelector('#total').innerHTML = total;
 }
