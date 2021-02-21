@@ -81,7 +81,7 @@
                 <input type="radio" name="rating" value="5">  5
               </div><br>
               <input class="form-control" type="text" name="title" placeholder="Title for your Review"><br>
-              <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea><br>
+              <textarea class="form-control" name="content" placeholder="Tell us what you think of our product!"></textarea>
               <input type="hidden" name="item_id" value="<?php echo $item_id;?>">
               <button class="btn btn-lg btn-block" type="submit" value="Submit Review">
             </form>
