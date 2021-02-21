@@ -37,6 +37,6 @@
     </div> <!-- close container -->
 
     <?php include 'footer.php'; ?>
-    <script src="../model/main.js"></script>
+    <script src="../library/cart.js"></script>
   </body>
 </html>
