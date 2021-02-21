@@ -63,6 +63,7 @@ function getCart()
          
           product += "<td></td><td></td><td>Total: </td><td>$<span id='total'></span></td>";
           product += "</table>";
+          product += "<button class='btn btn-block' onclick='subtotal()'>Update Total</button>";
       //added end
         result = "";
         result = product;
@@ -85,7 +86,7 @@ function getCart()
 
   window.addEventListener("load", () => {
     getCart();
-    subtotal();
+    
     username = document.querySelector('.username').innerHTML;
     stored = JSON.parse(localStorage.getItem('bsUsername'));
 
