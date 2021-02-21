@@ -2,28 +2,29 @@
   // Start the session
   session_start();
 
-  if (!isset($_SESSION['cart'])) {  
-    $_SESSION['cart'] = 0;
-  } else $_SESSION['cart'] += 1;
+  include '../support/database.php';
+
+  if (!isset($_SESSION['username'])) {  
+    $msg = 'Please <a href="login.php">login</a> 
+            to view your cart. If you do not have an account, 
+            you can <a href="signUp.php">create one here</a>.';
   
   include 'head.php';
 
 ?>
 
   <body>
-    <?php 
-    
-      include 'navbar.php'; 
-      if (isset($_SESSION['cart'])) {
-        if ($_SESSION['cart'] == 0) {
-          print 'You have no items in your cart. Check out our store page for must-have items!';
-        }
-      } else print 'Cart: ' . $_SESSION['cart'];
-      
-    ?>
-
+    <?php include 'navbar.php'; ?>
     <!-- Page Content -->
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div><?php if (!isset($_SESSION['username'])) { echo $msg;} ?></div>
+        </div> <!-- close column -->
+        <div class="col-md-2"></div>
+      </div> <!-- close row -->
+    </div> <!-- close container -->
 
     <?php include 'footer.php'; ?>
   </body>
