@@ -27,7 +27,7 @@ function subtotal() {
     priceArray.forEach(price => {
       total += price;
      });
-  document.querySelector('#username').innerHTML = total;
+  document.querySelector('#total').innerHTML = total;
 }
 
 //generates HTML to display a user's cart
