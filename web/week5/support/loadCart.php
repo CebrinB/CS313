@@ -13,7 +13,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $sql = "SELECT * FROM ecommerce.cart 
         FULL JOIN ecommerce.item on cart.item_id = item.item_id 
-        WHERE cart.user_id = '".$user['user_id'].'";
+        WHERE cart.user_id = '".$user['user_id']."'";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
