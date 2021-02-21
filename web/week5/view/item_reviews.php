@@ -4,8 +4,6 @@ session_start();
 
 include '../support/database.php';
 
-echo 'it worked';
-
 $item_id = htmlspecialchars($_GET['item_id']);
 
 $sql = '';

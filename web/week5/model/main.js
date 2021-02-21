@@ -46,6 +46,77 @@ function addToCart(item_id) {
    document.querySelector(selector).value = '';
 }
 
+function getCart()
+    {
+      console.log('checkout run');
+      data = {};
+      data['username'] = document.querySelector('#username').value;
+
+      $.ajax({
+        url: '../support/loadCart.php',
+        type: 'GET',
+        data: data,
+        dataType: 'json', //will parse json into javascript object
+        //callback called when suceed
+        success: (data) => {
+          console.log('ajax success!', data);
+             product = "";
+             product += "<table class='table table-hover table-bordered table-striped'>";
+             product += "<tr><th>Quantity</th><th>Item</th><th>Price</th><th>Subtotal</th></tr>";
+            
+          $.each(data, function (index, value) {
+            
+            
+            product += "<tr>";
+            product += "<td>"+ this.quantity + "</td>";
+            product += "<td>"+ this.item_name + "</td>";
+            product += "<td>" + "$" + this.item_price + "</td>";
+            product += "<td>" + "$" + (this.item_price * this.quantity) + "</td>";
+            product += "</tr>";
+          });// END LOOP
+           
+            product += "<td></td><td></td><td>Total: </td><td>" + "$functioncall" + "</td>";
+            product += "</table>";
+        //added end
+          result = "";
+          result = product;
+          //select status id element display in html
+          $('#cart').html(result);
+        }//success data call
+        
+      });//ajax function call
+     
+    }// End function
+
+    function attempt() {
+        
+    var return_first;
+    function callback(response) {
+    return_first = response;
+    //use return_first variable here
+    }
+
+    $.ajax({
+    'type': "POST",
+    'global': false,
+    'dataType': 'html',
+    'url': "ajax.php?first",
+    'data': { 'request': "", 'target': arrange_url, 'method': method_target },
+    'success': function(data){
+        callback(data);
+    },
+    });
+  }
+
+
+    
+    //Erase 
+    function erase(){
+
+        result = "";
+        $('#results').html(result);
+    }
+
 window.addEventListener("load", () => {
 
     $.ajax({

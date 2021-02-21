@@ -14,17 +14,28 @@
 
   <body>
     <?php include 'navbar.php'; ?>
+    
     <!-- Page Content -->
     <div class="container">
       <div class="row">
         <div class="col-md-2"></div>
+        
+        
         <div class="col-md-8">
-          <div><?php if (!isset($_SESSION['username'])) { echo $msg;} ?></div>
+          <div><h2>Items in your cart</h2></div>
+          <div>
+            <?php if (!isset($_SESSION['username'])) { 
+                    echo $msg;
+                  } else echo '<div id="cart" onload="getCart()"><input id="username" type="hidden" value="'.$_SESSION['username'].'"></div>'; ?>
+          </div>
         </div> <!-- close column -->
+        
+        
         <div class="col-md-2"></div>
       </div> <!-- close row -->
     </div> <!-- close container -->
 
     <?php include 'footer.php'; ?>
+    <script src="../model/main.js"></script>
   </body>
 </html>

@@ -34,7 +34,7 @@
        if ($signUp > 0) {
          $_SESSION['username'] = $username;
        }
-         header('Location: home.php');
+         header('Location: shop.php');
          exit;
          break;
    case 'signIn':

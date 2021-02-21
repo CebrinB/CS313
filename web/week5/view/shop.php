@@ -89,6 +89,6 @@
  
 
     <?php include 'footer.php'; ?>
-    
+    <script src="../model/main.js"></script>
   </body>
 </html>
