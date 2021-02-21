@@ -3,11 +3,10 @@
   session_start();
 
   include '../support/database.php';
-
-  if (!isset($_SESSION['username'])) {  
-    $msg = 'Please <a href="login.php">login</a> 
-            to view your cart. If you do not have an account, 
-            you can <a href="signUp.php">create one here</a>.';
+ 
+  $msg = 'Please <a href="login.php">login</a> 
+          to view your cart. If you do not have an account, 
+          you can <a href="signUp.php">create one here</a>.';
   
   include 'head.php';
 
