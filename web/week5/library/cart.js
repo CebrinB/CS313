@@ -22,6 +22,7 @@ function addToCart(item_id) {
 }
 
 function subtotal() {
+  debugger;
   total = 0;
   const priceArray = document.querySelectorAll('.subtotal').innerHTML;
     priceArray.forEach(price => {
@@ -63,7 +64,7 @@ function getCart()
          
           product += "<td></td><td></td><td>Total: </td><td>$<span id='total'></span></td>";
           product += "</table>";
-          product += "<button class='btn btn-block' onclick='subtotal()'>Update Total</button>";
+          product += "<button class='btn' onclick='subtotal()'>Update Total</button>";
       //added end
         result = "";
         result = product;
