@@ -75,6 +75,7 @@ function getCart()
   }
 
   window.addEventListener("load", () => {
+    getCart();
     username = document.querySelector('.username').innerHTML;
     stored = JSON.parse(localStorage.getItem('bsUsername'));
 
