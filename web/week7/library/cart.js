@@ -21,12 +21,18 @@ function addToCart(item_id) {
  document.querySelector(selector).value = '';
 }
 
+//totals the price of items in the cart
 function subtotal() {
   total = 0;
   const priceArray = document.querySelectorAll('.subtotal');
     priceArray.forEach(price => {
       total += parseFloat(price.innerHTML);
      });
+  check = (total).toLocaleString('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  });
+  console.log(check);
   document.querySelector('#total').innerHTML = total;
 }
 
