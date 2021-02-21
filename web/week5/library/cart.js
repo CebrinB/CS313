@@ -87,6 +87,7 @@ function getCart()
 
   window.addEventListener("load", () => {
     getCart();
+    subtotal();
     
     username = document.querySelector('.username').innerHTML;
     stored = JSON.parse(localStorage.getItem('bsUsername'));
