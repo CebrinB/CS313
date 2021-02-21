@@ -42,12 +42,12 @@
           </div>        
           <div class="row"><br>
             <div class="col-md-7">
-              <div><h3>Reviews</h3></div>
+              <div><h2>Reviews</h2></div>
                 <?php
                   if (sizeof($reviews) > 0) {
                     foreach ($reviews as $review) {
                       echo '<div class="item">';
-                      echo '<h2>'.$review['title'].'</h2>
+                      echo '<h3>"'.$review['title'].'"</h3>
                               <div>
                                 <span class="sr-only">'.$review['rating'].' out of Five Stars</span>';
                                 $stars = $review['rating'];
