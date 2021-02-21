@@ -19,7 +19,7 @@
 
   <body>
     <?php include 'navbar.php'; ?>
-    <?php echo '<div class="username">'.$username.'</div>';} ?>
+    <?php echo '<div class="username">'.$username.'</div>'; ?>
 
     <!-- Page Content -->
     <div class="container-fluid">
