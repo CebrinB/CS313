@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $quantity = filter_input(INPUT_POST, 'quantity', FILTER_SANITIZE_NUMBER_INT);
 }
 
-$sql = 'SELECT user_id FROM ecommerce.user where username = \''.$user_name.'\'';
+$sql = 'SELECT user_id FROM ecommerce.user WHERE user_name = \''.$user_name.'\'';
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
