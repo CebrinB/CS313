@@ -12,7 +12,7 @@ $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 $json = json_encode($user);
- echo $json;
+ //echo $json;
 
 
 // $sql = "SELECT * FROM ecommerce.cart 
