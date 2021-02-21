@@ -10,7 +10,8 @@ $sql = 'SELECT * FROM ecommerce.user WHERE user_name = \''.$username.'\'';
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
-echo $user['user_id'];
+$json = json_encode($user);
+ echo $json;
 
 // $sql = "SELECT * FROM ecommerce.cart 
 //         FULL JOIN ecommerce.item on cart.item_id = item.item_id 
