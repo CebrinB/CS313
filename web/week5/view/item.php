@@ -71,7 +71,7 @@
         <div class="col-md-6 well">
           <div><h4>Write a Review</h4></div>
             <form id="reviewForm" method ="POST" action="../support/insert_review.php">
-              <input class="form-control" type="text" name="user_name" placeholder="Enter your username" required><br>
+              <input class="form-control" type="text" name="user_name" placeholder="Enter your username" required>
               <div class="stars">
                 <label for="rating"> Rating 1 - 5:</label>   1
                 <input type="radio" name="rating" value="1"> 
