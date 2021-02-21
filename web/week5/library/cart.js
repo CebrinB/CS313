@@ -21,6 +21,15 @@ function addToCart(item_id) {
  document.querySelector(selector).value = '';
 }
 
+function subtotal() {
+  total = 0;
+  const priceArray = document.querySelectorAll('.subtotal').innerHTML;
+    priceArray.forEach(price => {
+      total += price;
+     });
+  document.querySelector('#username').innerHTML = total;
+}
+
 //generates HTML to display a user's cart
 function getCart()
   {
@@ -48,11 +57,11 @@ function getCart()
           product += "<td>"+ this.quantity + "</td>";
           product += "<td>"+ this.item_name + "</td>";
           product += "<td>" + "$" + this.item_price + "</td>";
-          product += "<td>" + "$" + (this.item_price * this.quantity) + "</td>";
+          product += "<td>$<span class='subtotal'>" + (this.item_price * this.quantity) + "</span></td>";
           product += "</tr>";
         });// END LOOP
          
-          product += "<td></td><td></td><td>Total: </td><td>" + "$functioncall" + "</td>";
+          product += "<td></td><td></td><td>Total: </td><td>$<span id='total'></span></td>";
           product += "</table>";
       //added end
         result = "";
@@ -76,6 +85,7 @@ function getCart()
 
   window.addEventListener("load", () => {
     getCart();
+    subtotal();
     username = document.querySelector('.username').innerHTML;
     stored = JSON.parse(localStorage.getItem('bsUsername'));
 
