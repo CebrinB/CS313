@@ -59,7 +59,7 @@ function getCart()
           product += "<td>" + "$" + this.item_price + "</td>";
           product += "<td>$<span class='subtotal'>" + sub + "</span></td>";
           product += "</tr>";
-          total += sub;
+          total += parseFloat(sub);
         });// END LOOP
          
           product += "<td></td><td></td><td>Total: </td><td>$<span id='total'>" + total + "</span></td>";
