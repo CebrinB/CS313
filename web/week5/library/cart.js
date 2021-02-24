@@ -21,15 +21,6 @@ function addToCart(item_id) {
  document.querySelector(selector).value = '';
 }
 
-function subtotal() {
-  total = 0;
-  const priceArray = document.querySelectorAll('.subtotal');
-    priceArray.forEach(price => {
-      total += parseFloat(price.innerHTML);
-     });
-  document.querySelector('#total').innerHTML = total;
-}
-
 //generates HTML to display a user's cart
 function getCart()
   {
@@ -48,8 +39,9 @@ function getCart()
            product = "";
            product += "<table class='table table-hover table-bordered table-striped'>";
            product += "<tr><th>Quantity</th><th>Item</th><th>Price</th><th>Subtotal</th></tr>";
-          
+
            total = 0;
+
         $.each(data, function (index, value) {
           
           sub = parseFloat(this.item_price * this.quantity).toFixed(2);
