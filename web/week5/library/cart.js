@@ -36,7 +36,6 @@ function getCart()
     console.log('checkout run');
     data = {};
     data['username'] = document.querySelector('.username').innerHTML;
-    console.log(data['username']);
 
     $.ajax({
       url: '../support/loadCart.php',
