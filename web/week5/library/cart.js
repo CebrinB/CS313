@@ -49,18 +49,20 @@ function getCart()
            product += "<table class='table table-hover table-bordered table-striped'>";
            product += "<tr><th>Quantity</th><th>Item</th><th>Price</th><th>Subtotal</th></tr>";
           
+           total = 0;
         $.each(data, function (index, value) {
           
-          
+          sub = parseFloat(this.item_price * this.quantity).toFixed(2);
           product += "<tr>";
           product += "<td>"+ this.quantity + "</td>";
           product += "<td>"+ this.item_name + "</td>";
           product += "<td>" + "$" + this.item_price + "</td>";
-          product += "<td>$<span class='subtotal'>" + parseFloat(this.item_price * this.quantity).toFixed(2) + "</span></td>";
+          product += "<td>$<span class='subtotal'>" + sub + "</span></td>";
           product += "</tr>";
+          total += sub;
         });// END LOOP
          
-          product += "<td></td><td></td><td>Total: </td><td>$<span id='total'></span></td>";
+          product += "<td></td><td></td><td>Total: </td><td>$<span id='total'>" + total + "</span></td>";
           product += "</table>";
           product += "<button class='btn' onclick='subtotal()'>Update Total</button>";
       //added end
@@ -85,13 +87,4 @@ function getCart()
 
   window.addEventListener("load", () => {
     getCart();
-    
-    username = document.querySelector('.username').innerHTML;
-    stored = JSON.parse(localStorage.getItem('bsUsername'));
-
-    if (username.length > 0) {
-      localStorage.setItem('bsUsername', JSON.stringify(username));
-    } else if (stored.length > 0) {
-      document.querySelector('.username').innerHTML = stored;
-    }
  });
