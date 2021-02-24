@@ -57,7 +57,7 @@ function getCart()
           product += "<td>"+ this.quantity + "</td>";
           product += "<td>"+ this.item_name + "</td>";
           product += "<td>" + "$" + this.item_price + "</td>";
-          product += "<td>$<span class='subtotal'>" + (parseFloat(this.item_price * this.quantity)) + "</span></td>";
+          product += "<td>$<span class='subtotal'>" + (parseFloat(this.item_price * this.quantity).toFixed(2)) + "</span></td>";
           product += "</tr>";
         });// END LOOP
          
