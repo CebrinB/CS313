@@ -1,0 +1,39 @@
+CREATE SCHEMA bookshelf;
+
+//table to store user information
+CREATE TABLE bookshelf.users (
+user_id SERIAL NOT NULL PRIMARY KEY,
+username VARCHAR(56) NOT NULL,
+password VARCHAR(56) NOT NULL
+);
+
+//tables for authors
+CREATE TABLE bookshelf.authors (
+author_id SERIAL NOT NULL PRIMARY KEY,
+name VARCHAR(255)
+);
+
+//table for books
+CREATE TABLE bookshelf.books (
+book_id SERIAL NOT NULL PRIMARY KEY,
+title VARCHAR(255) NOT NULL,
+publisher VARCHAR(255),
+year INT,
+author_id INT REFERENCES bookshelf.authors(author_id)
+);
+
+//table for user libraries
+CREATE TABLE bookshelf.library (
+library_id SERIAL NOT NULL PRIMARY KEY,
+user_id INT NOT NULL REFERENCES bookshelf.users(user_id),
+book_id INT NOT NULL REFERENCES bookshelf.books(book_id)
+);
+
+INSERT INTO bookshelf.books (title, year) VALUES
+('Captains Courageous', 1896),
+('Heidi', 1880);
+
+INSERT INTO bookshelf.authors (name) VALUES
+('Rudyard Kipling'),
+('Johanna Spyri');
+
