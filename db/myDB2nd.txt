@@ -40,3 +40,10 @@ INSERT INTO bookshelf.authors (name) VALUES
 INSERT INTO bookshelf.library (user_id, book_id) VALUES
 (1, 1),
 (1, 2);
+
+SELECT * FROM bookshelf.library 
+FULL JOIN bookshelf.books on library.book_id = books.book_id 
+FULL JOIN bookshelf.authors on books.author_id = authors.author_id 
+WHERE library.user_id = 1
+ORDER BY books.title;
+
